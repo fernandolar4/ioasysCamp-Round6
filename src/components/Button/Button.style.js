@@ -9,7 +9,7 @@ export const Button = styled.button`
   border-radius: 15px;
   width: 296px;
   :hover {
-    background-color: ${({ theme }) => theme.colors.primaryDarker};
+    background-color: ${({ theme }) => theme.colors.primaryDark};
   }
 
   &.small {
@@ -36,7 +36,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.primary};
     :hover {
       color: #fcfcfc;
-      background-color: ${({ theme }) => theme.colors.primaryDarker};
+      background-color: ${({ theme }) => theme.colors.primaryDark};
     }
     &.disabled {
       color: #e5e5e5;
