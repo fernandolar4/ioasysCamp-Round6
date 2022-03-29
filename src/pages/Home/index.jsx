@@ -2,6 +2,7 @@ import * as S from "./Home.style";
 
 import Button from "../../components/Button";
 import Tag from "../../components/Tag";
+import CheckBox from "../../components/CheckBox";
 
 const Home = () => {
   return (
@@ -28,8 +29,9 @@ const Home = () => {
       <p> Tag 2</p>
       <Tag className="ghost">Tag Aqui</Tag>
       <h2>Checkbox</h2>
-      <input type="checkbox"></input>
-      <label>Texto label</label>
+
+      <CheckBox>Abacaxi</CheckBox>
+      <CheckBox className="disabled">maça</CheckBox>
     </>
   );
 };
