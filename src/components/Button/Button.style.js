@@ -31,8 +31,8 @@ export const Button = styled.button`
   }
 
   &.ghost {
+    border: 2px solid;
     background-color: transparent;
-    border: 3px solid;
     color: ${({ theme }) => theme.colors.primary};
     :hover {
       color: #fcfcfc;
