@@ -14,6 +14,8 @@ const Home = () => {
       <Button className="small secondary">Secondary Pequeno</Button>
       <p>Fantasmatico</p>
       <Button className="ghost">Fantasmatico</Button>
+      <p>Fantasmatico PP</p>
+      <Button className="ghost small">Fantasmatico PP</Button>
       <p>Fantasmatico Indisponivel</p>
       <Button className="ghost disabled">Fantasmatico Indisponivel</Button>
       <p> Indisponivel Padrao</p>

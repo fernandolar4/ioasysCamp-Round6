@@ -5,15 +5,17 @@ export const Button = styled.button`
   color: #fcfcfc;
   font-weight: 600;
   font-size: 16px;
-  padding: 17px 124px;
+  padding: 17px 0px;
   border-radius: 15px;
+  width: 296px;
   :hover {
     background-color: ${({ theme }) => theme.colors.primaryDarker};
   }
 
   &.small {
     font-size: 14px;
-    padding: 15px 49px;
+    padding: 15px 0px;
+    width: 140px;
   }
 
   &.secondary {
@@ -25,14 +27,20 @@ export const Button = styled.button`
 
   &.disabled {
     background-color: #e5e5e5;
+    pointer-events: none;
   }
 
   &.ghost {
     background-color: transparent;
     border: 3px solid;
     color: ${({ theme }) => theme.colors.primary};
+    :hover {
+      color: #fcfcfc;
+      background-color: ${({ theme }) => theme.colors.primaryDarker};
+    }
     &.disabled {
       color: #e5e5e5;
+      pointer-events: none;
     }
   }
 `;
