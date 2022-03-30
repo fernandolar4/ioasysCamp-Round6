@@ -4,6 +4,8 @@ import Button from "../../components/Button";
 import Tag from "../../components/Tag";
 import CheckBox from "../../components/CheckBox";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -11,8 +13,10 @@ const Home = () => {
       <h2>Botoes</h2>
       <p>Padrao</p>
       <Button>Padrao</Button>
-      <p>Pequeno</p>
-      <Button className="small ">Pequeno</Button>
+      <p>Login Pequeno</p>
+      <Button className="small ">
+        <Link to="/login">Login</Link>
+      </Button>
       <p>Secondary Pequeno</p>
       <Button className="small secondary">Secondary Pequeno</Button>
       <p>Fantasmatico</p>
