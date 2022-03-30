@@ -21,7 +21,6 @@ export const Button = styled.button`
   }
 
   &.small {
-    font-size: 14px;
     height: 48px;
     width: 140px;
     a {
