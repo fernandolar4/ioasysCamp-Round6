@@ -2,20 +2,31 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
-  color: #fcfcfc;
+  color: ${({ theme }) => theme.colors.NeutralLighter};
   font-weight: 600;
   font-size: 16px;
-  padding: 17px 0px;
+  height: 54px;
   border-radius: 15px;
   width: 296px;
   :hover {
     background-color: ${({ theme }) => theme.colors.primaryDark};
   }
 
+  a {
+    text-decoration: none;
+    padding-top: 17px;
+    display: block;
+    height: 100%;
+    color: ${({ theme }) => theme.colors.NeutralLighter};
+  }
+
   &.small {
     font-size: 14px;
-    padding: 15px 0px;
+    height: 48px;
     width: 140px;
+    a {
+      padding-top: 15px;
+    }
   }
 
   &.secondary {
@@ -26,7 +37,7 @@ export const Button = styled.button`
   }
 
   &.disabled {
-    background-color: #e5e5e5;
+    background-color: ${({ theme }) => theme.colors.NeutralMediumLight};
     pointer-events: none;
   }
 
@@ -35,11 +46,11 @@ export const Button = styled.button`
     background-color: transparent;
     color: ${({ theme }) => theme.colors.primary};
     :hover {
-      color: #fcfcfc;
+      color: ${({ theme }) => theme.colors.NeutralLighter};
       background-color: ${({ theme }) => theme.colors.primaryDark};
     }
     &.disabled {
-      color: #e5e5e5;
+      color: ${({ theme }) => theme.colors.NeutralMediumLight};
       pointer-events: none;
     }
   }

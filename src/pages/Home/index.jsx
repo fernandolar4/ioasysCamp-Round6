@@ -12,7 +12,9 @@ const Home = () => {
       <h1>Home Cobé</h1>
       <h2>Botoes</h2>
       <p>Padrao</p>
-      <Button>Padrao</Button>
+      <Button>
+        <Link to="/login">Padrao</Link>
+      </Button>
       <p>Login Pequeno</p>
       <Button className="small ">
         <Link to="/login">Login</Link>
