@@ -42,16 +42,16 @@ export const RadioButton = styled.div`
     }
 
     &.disabled {
-      color: #acaead;
+      color: ${({ theme }) => theme.colors.neutralMediumDark};
       pointer-events: none;
     }
     &.disabled + label {
-      color: #acaead;
+      color: ${({ theme }) => theme.colors.neutralMediumDark};
       pointer-events: none;
     }
 
     &.disabled + label:before {
-      border: 2px solid #acaead;
+      border: 2px solid ${({ theme }) => theme.colors.neutralMediumDark};
       pointer-events: none;
     }
 

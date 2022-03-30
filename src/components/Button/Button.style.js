@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.NeutralLighter};
+  color: ${({ theme }) => theme.colors.neutralLighter};
   font-weight: 600;
   font-size: 14px;
   border-radius: 12px;
@@ -17,7 +17,7 @@ export const Button = styled.button`
     padding-top: 17px;
     display: block;
     height: 100%;
-    color: ${({ theme }) => theme.colors.NeutralLighter};
+    color: ${({ theme }) => theme.colors.neutralLighter};
   }
 
   &.small {
@@ -36,7 +36,7 @@ export const Button = styled.button`
   }
 
   &.disabled {
-    background-color: ${({ theme }) => theme.colors.NeutralMediumLight};
+    background-color: ${({ theme }) => theme.colors.neutralMediumLight};
     pointer-events: none;
   }
 
@@ -45,11 +45,11 @@ export const Button = styled.button`
     background-color: transparent;
     color: ${({ theme }) => theme.colors.primary};
     :hover {
-      color: ${({ theme }) => theme.colors.NeutralLighter};
+      color: ${({ theme }) => theme.colors.neutralLighter};
       background-color: ${({ theme }) => theme.colors.primaryDark};
     }
     &.disabled {
-      color: ${({ theme }) => theme.colors.NeutralMediumLight};
+      color: ${({ theme }) => theme.colors.neutralMediumLight};
       pointer-events: none;
     }
   }
