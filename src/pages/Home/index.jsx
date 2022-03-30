@@ -37,10 +37,13 @@ const Home = () => {
       <Tag className="ghost">Tag Aqui</Tag>
       <h2>Checkbox</h2>
       <CheckBox>Abacaxi</CheckBox>
+      <CheckBox>Pera</CheckBox>
+      <CheckBox>Amendoim</CheckBox>
       <CheckBox className="disabled">maça</CheckBox>
       <h2>Radio</h2>
       <RadioButton name="teste">McQueen</RadioButton>
       <RadioButton name="teste">Tomate</RadioButton>
+      <RadioButton name="teste">Tomato</RadioButton>
       <RadioButton className="disabled">Relanpagos</RadioButton>
     </S.Teste>
   );

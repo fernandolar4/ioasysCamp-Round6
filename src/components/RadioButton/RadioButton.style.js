@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RadioButton = styled.p`
+export const RadioButton = styled.div`
   display: block;
   position: relative;
   cursor: pointer;
