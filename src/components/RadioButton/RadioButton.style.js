@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-export const CheckBox = styled.div`
+export const RadioButton = styled.p`
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   input {
     position: absolute;
     opacity: 0;
@@ -20,7 +28,7 @@ export const CheckBox = styled.div`
       height: 20px;
       background: white;
       border: 2px solid black;
-      border-radius: 6px;
+      border-radius: 50px;
     }
 
     &:hover + label:before {
@@ -29,8 +37,8 @@ export const CheckBox = styled.div`
     }
 
     &:checked + label:before {
-      background: ${({ theme }) => theme.colors.primary};
-      border: 2px solid transparent;
+      background: transparent;
+      border: 2px solid ${({ theme }) => theme.colors.primary};
     }
 
     &.disabled {
@@ -50,14 +58,13 @@ export const CheckBox = styled.div`
     &:checked + label:after {
       content: "";
       position: absolute;
-      left: 5px;
-      top: 9px;
-      background: white;
-      width: 2px;
-      height: 2px;
-      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white,
-        4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-      transform: rotate(45deg);
-    }
+      left: 4px;
+      top: 4px;
+      background: ${({ theme }) => theme.colors.primary};
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      
+      
   }
 `;

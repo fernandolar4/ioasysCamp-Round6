@@ -3,12 +3,13 @@ import * as S from "./Home.style";
 import Button from "../../components/Button";
 import Tag from "../../components/Tag";
 import CheckBox from "../../components/CheckBox";
+import RadioButton from "../../components/RadioButton";
 
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <>
+    <S.Teste>
       <h1>Home Cobé</h1>
       <h2>Botoes</h2>
       <p>Padrao</p>
@@ -35,10 +36,13 @@ const Home = () => {
       <p> Tag 2</p>
       <Tag className="ghost">Tag Aqui</Tag>
       <h2>Checkbox</h2>
-
       <CheckBox>Abacaxi</CheckBox>
       <CheckBox className="disabled">maça</CheckBox>
-    </>
+      <h2>Radio</h2>
+      <RadioButton name="teste">McQueen</RadioButton>
+      <RadioButton name="teste">Tomate</RadioButton>
+      <RadioButton className="disabled">Relanpagos</RadioButton>
+    </S.Teste>
   );
 };
 
