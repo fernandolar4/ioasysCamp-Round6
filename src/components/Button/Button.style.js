@@ -4,10 +4,10 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.NeutralLighter};
   font-weight: 600;
-  font-size: 16px;
-  height: 54px;
-  border-radius: 15px;
-  width: 296px;
+  font-size: 14px;
+  border-radius: 12px;
+  height: 52px;
+  width: 290px;
   :hover {
     background-color: ${({ theme }) => theme.colors.primaryDark};
   }
