@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import Tag from "../../components/Tag";
 import CheckBox from "../../components/CheckBox";
 import RadioButton from "../../components/RadioButton";
+import Form from "../../components/Form";
 
 import { Link } from "react-router-dom";
 
@@ -45,6 +46,13 @@ const Home = () => {
       <RadioButton name="teste">Tomate</RadioButton>
       <RadioButton name="teste">Tomato</RadioButton>
       <RadioButton className="disabled">Relanpagos</RadioButton>
+      <h2>Form</h2>
+      <Form>Form 1</Form>
+      <Form placeholder="Placeholder">Form 1</Form>
+      <Form placeholder="Placeholder" className="disabled">
+        Form 1
+      </Form>
+      <Form type="date">Form 2</Form>
     </S.Teste>
   );
 };
