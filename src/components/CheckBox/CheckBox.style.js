@@ -38,7 +38,7 @@ export const CheckBox = styled.div`
       pointer-events: none;
     }
     &.disabled + label {
-      color: #${({ theme }) => theme.colors.neutralMediumDark};
+      color: ${({ theme }) => theme.colors.neutralMediumDark};
       pointer-events: none;
     }
 
