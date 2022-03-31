@@ -6,10 +6,10 @@ const Footer = () => {
     <S.Footer>
       <article>
         <h4>Cobé - turismo comunitário</h4>
-        <Link to="/login">Sobre a empresa</Link>
-        <Link to="/login">Entre em contato</Link>
-        <Link to="/login">Dúvidas frequentes</Link>
-        <Link to="/login">Termos de uso</Link>
+        <Link to="/sobre">Sobre a empresa</Link>
+        <Link to="/contato">Entre em contato</Link>
+        <Link to="/faq">Dúvidas frequentes</Link>
+        <Link to="/termos">Termos de uso</Link>
       </article>
       <div />
       <p>Cobé - Turismo Comunitário © 2022</p>

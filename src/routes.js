@@ -19,20 +19,20 @@ const Routes = () => {
   return (
     <Switch>
       <Route path="/" exact element={<Home />} />
-      <Route path="/login" exact element={<Login />} />
-      <Route path="/pacotes" exact element={<Pacotes />} />
-      <Route path="/viagem" exact element={<Viagem />} />
-      <Route path="/checkout" exact element={<Checkout />} />
-      <Route path="/resumo" exact element={<Resumo />} />
       <Route path="/carrinho" exact element={<Carrinho />} />
-      <Route path="/contato" exact element={<Contato />} />
-      <Route path="/sobre" exact element={<Sobre />} />
-      <Route path="/faq" exact element={<FAQ />} />
-      <Route path="/termos" exact element={<Termos />} />
+      <Route path="/checkout" exact element={<Checkout />} />
+      <Route path="/compras" exact element={<Compras />} />
       <Route path="/conta" exact element={<Conta />} />
+      <Route path="/contato" exact element={<Contato />} />
+      <Route path="/faq" exact element={<FAQ />} />
       <Route path="/infopessoal" exact element={<InfoPessoal />} />
       <Route path="/infopagamento" exact element={<InfoPagamento />} />
-      <Route path="/compras" exact element={<Compras />} />
+      <Route path="/login" exact element={<Login />} />
+      <Route path="/pacotes" exact element={<Pacotes />} />
+      <Route path="/resumo" exact element={<Resumo />} />
+      <Route path="/sobre" exact element={<Sobre />} />
+      <Route path="/termos" exact element={<Termos />} />
+      <Route path="/viagem" exact element={<Viagem />} />
     </Switch>
   );
 };
