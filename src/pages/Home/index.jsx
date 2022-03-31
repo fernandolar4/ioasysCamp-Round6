@@ -5,6 +5,7 @@ import Tag from "../../components/Tag";
 import CheckBox from "../../components/CheckBox";
 import RadioButton from "../../components/RadioButton";
 import Form from "../../components/Form";
+import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 
 import { Link } from "react-router-dom";
@@ -12,6 +13,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
+      <NavBar />
       <S.Teste>
         <h1>Home Cobé</h1>
         <h2>Botoes</h2>
