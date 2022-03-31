@@ -1,15 +1,15 @@
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
-import * as S from "./Login.style";
+import * as S from "./Compras.style";
 
-const Login = () => {
+const Compras = () => {
   return (
     <>
       <NavBar />
-      <h1>LOGIN SCREEN</h1>
+      <h1>Compras</h1>
       <Footer />
     </>
   );
 };
 
-export default Login;
+export default Compras;

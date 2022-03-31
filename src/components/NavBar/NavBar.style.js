@@ -21,6 +21,11 @@ export const NavBar = styled.nav`
     }
   }
 
+${
+  "" /* 
+ ARRUMAR O HAMBurguer NÃO ESTÁ FUNCIONAL DESSA FORMA */
+}
+
   .hamburguer {
     display: none;
     .bar {
@@ -50,7 +55,7 @@ export const NavBar = styled.nav`
       }
 
       ul{
-          left: 100vw;
+        display: none;
           top: 700px;
           gap: 0;
           flex-direction: column;
