@@ -2,8 +2,9 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import * as S from "./Pacotes.style";
 
-import Mock from "../../mock/pacotes.json";
 import { Link } from "react-router-dom";
+
+import Mock from "../../mock/pacotes.json";
 
 const Pacotes = () => {
   return (
