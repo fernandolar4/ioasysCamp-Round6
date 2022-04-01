@@ -35,6 +35,7 @@ export const Pacotes = styled.section`
           font-size: 14px;
           font-weight: 700;
           margin-bottom: 50px;
+          margin-left: 8px;
         }
       }
     }
