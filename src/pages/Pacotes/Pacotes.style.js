@@ -12,9 +12,11 @@ export const Pacotes = styled.section`
   }
   section {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-
+    justify-content: space-around;
+    @media (min-width: 345px) {
+      justify-content: space-between;
+    }
     a {
       text-decoration: none;
       div {
