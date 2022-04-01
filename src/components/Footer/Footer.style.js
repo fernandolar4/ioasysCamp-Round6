@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   width: 100vw;
-  background: ${({ theme }) => theme.colors.neutralMediumDark};
+  background: ${({ theme }) => theme.colors.neutralMediumLight};
   padding: 34px 32px 13px;
 
   display: flex;
@@ -29,7 +29,7 @@ export const Footer = styled.footer`
   }
   div {
     height: 1px;
-    background-color: black;
+    background-color: ${({ theme }) => theme.colors.neutralMediumDark};
     width: 100%;
     margin-bottom: 12px;
   }

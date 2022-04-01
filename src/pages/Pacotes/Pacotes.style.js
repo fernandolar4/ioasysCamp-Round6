@@ -28,6 +28,7 @@ export const Pacotes = styled.section`
           height: 160px;
           width: 140px;
           margin-bottom: 20px;
+          border-radius: 15px;
         }
         span {
           color: ${({ theme }) => theme.colors.neutralDarker};
