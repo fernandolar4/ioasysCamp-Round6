@@ -7,6 +7,10 @@ import Footer from "../../components/Footer";
 
 import placeholder from "../../assets/placeholder.png";
 import mockup from "../../assets/mockMobile.png";
+import Calendar from "../../assets/icons/Calendar.svg";
+import Camping from "../../assets/icons/Camping.svg";
+import Mountain from "../../assets/icons/Mountain.svg";
+import Mapa from "../../assets/icons/Map.svg";
 
 import { Link } from "react-router-dom";
 
@@ -58,6 +62,44 @@ const Home = () => {
       </S.Pacotes>
       <S.Comunidades>
         <S.Subtitulo>Comunidades parceiras</S.Subtitulo>
+        <S.Parceiras>
+          <div className="iconName">
+            <img src={Camping} alt="Icone" />
+            <p>Lorem Ipsum</p>
+          </div>
+          <div className="containerParceiras">
+            <div className="barraV" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
+          </div>
+          <div className="iconName">
+            <img src={Mountain} alt="Icone" />
+            <p>Lorem Ipsum</p>
+          </div>
+          <div className="containerParceiras">
+            <div className="barraV" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
+          </div>
+          <div className="iconName">
+            <img src={Calendar} alt="Icone" />
+            <p>Lorem Ipsum</p>
+          </div>
+          <div className="containerParceiras">
+            <div className="barraV" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
+          </div>
+        </S.Parceiras>
         <Button className="disabled">
           <Link to="/pacotes">Button</Link>
         </Button>

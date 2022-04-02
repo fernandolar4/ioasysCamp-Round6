@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 import Calendar from "../../assets/icons/Calendar.svg";
 import Camping from "../../assets/icons/Camping.svg";
-import Mapa from "../../assets/icons/Map.svg";
 import Mountain from "../../assets/icons/Mountain.svg";
+import Mapa from "../../assets/icons/Map.svg";
 
 const Viagem = () => {
   return (

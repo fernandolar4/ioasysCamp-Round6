@@ -88,6 +88,7 @@ export const Comunidades = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 32px;
   margin-bottom: 70px;
 `;
 
@@ -119,5 +120,40 @@ export const App = styled.section`
   }
   img {
     margin-bottom: 53px;
+  }
+`;
+
+export const Parceiras = styled.section`
+  margin-bottom: 11px;
+  .iconName {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    img {
+      margin-right: 12px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.neutralDarker};
+    }
+  }
+
+  .containerParceiras {
+    display: flex;
+    flex-direction: row;
+    .barraV {
+      width: 1px;
+      height: 64px;
+      background-color: ${({ theme }) => theme.colors.neutralMediumLight};
+      margin-left: 10px;
+      margin-right: 23px;
+      margin-bottom: 19px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: ${({ theme }) => theme.colors.neutralDark};
+    }
   }
 `;
