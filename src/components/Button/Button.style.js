@@ -28,6 +28,14 @@ export const Button = styled.button`
     }
   }
 
+  &.medium {
+    height: 48px;
+    width: 186px;
+    a {
+      padding-top: 15px;
+    }
+  }
+
   &.secondary {
     background-color: ${({ theme }) => theme.colors.secondary};
     :hover {
