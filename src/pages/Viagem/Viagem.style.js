@@ -1,15 +1,49 @@
 import styled from "styled-components";
 
 export const Viagem = styled.section`
-  padding: 35px 32px 20px;
+  padding: 31px 32px 30px;
 `;
 export const Info = styled.section`
-  h2 {
-    display: block;
-    font-size: 32px;
+  h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.neutralDark};
+    margin-bottom: 22px;
+  }
+  img {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .nomeValor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
     color: ${({ theme }) => theme.colors.neutralDarker};
     font-weight: 600;
-    margin-bottom: 42px;
+    margin-bottom: 24px;
+  }
+
+  .descricao,
+  .pessoas {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: ${({ theme }) => theme.colors.neutralDark};
+  }
+  .vagas {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .pessoas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
   }
 `;
 

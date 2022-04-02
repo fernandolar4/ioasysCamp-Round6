@@ -17,12 +17,18 @@ const Viagem = () => {
       <NavBar />
       <S.Viagem>
         <S.Info>
+          <h5>Início/Pacotes de turimo/{Mock.pacotes[1].nome}</h5>
           <img src={Mock.pacotes[1].foto} alt="Foto do local" />
-          <div>
+          <div className="nomeValor">
             <span>{Mock.pacotes[1].nome}</span>
             <span>R${Mock.pacotes[1].valor}</span>
           </div>
-          <p>X vagas ainda disponíveis</p>
+          <p className="descricao">{Mock.pacotes[1].descricao}</p>
+          <p className="vagas">X vagas ainda disponíveis</p>
+          <div className="pessoas">
+            <p>Quantidade de pessoas</p>
+            <span>0</span>
+          </div>
         </S.Info>
         <Button className="secondary">
           <Link to="/resumo">Comprar Pacote</Link>
