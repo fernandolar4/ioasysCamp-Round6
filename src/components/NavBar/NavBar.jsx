@@ -2,6 +2,7 @@ import * as S from "./NavBar.style";
 
 import Cart from "../../assets/icons/Cart.svg";
 import Hamburguer from "../../assets/icons/Hamburguer.svg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -25,7 +26,9 @@ const NavBar = () => {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <h1>Logo</h1>
+      <h1>
+        <Link to="/">Logo</Link>
+      </h1>
       <a href="/login">
         <img src={Cart} alt="Carrinho de Compras"></img>
       </a>

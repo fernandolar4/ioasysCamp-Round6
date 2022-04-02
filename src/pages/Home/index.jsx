@@ -1,12 +1,12 @@
 import * as S from "./Home.style";
 
 import Button from "../../components/Button";
-import Tag from "../../components/Tag";
-import CheckBox from "../../components/CheckBox";
-import RadioButton from "../../components/RadioButton";
-import Form from "../../components/Form";
+
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+
+import placeholder from "../../assets/placeholder.png";
+import mockup from "../../assets/mockMobile.png";
 
 import { Link } from "react-router-dom";
 
@@ -14,50 +14,66 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <S.Teste>
-        <h1>Home Cobé</h1>
-        <h2>Botoes</h2>
-        <p>Padrao</p>
-        <Button>
-          <Link to="/login">Padrao</Link>
+      <S.Capa>
+        <article>
+          <h1>Turismo comunitário</h1>
+          <p>como essa atividade pode ajudar a erradicar a pobreza</p>
+        </article>
+        <Button className="ghost">
+          <Link to="/pacotes">Saiba como é possível</Link>
         </Button>
-        <p>Login Pequeno</p>
-        <Button className="small ">
-          <Link to="/login">Login</Link>
+      </S.Capa>
+      <S.Pacotes>
+        <S.Subtitulo>Como são nossos pacotes de turismo?</S.Subtitulo>
+        <S.Pacote>
+          <img src={placeholder} alt="Pacote" />
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor
+          </p>
+        </S.Pacote>
+        <S.Pacote>
+          <img src={placeholder} alt="Pacote" />
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor
+          </p>
+        </S.Pacote>
+        <S.Pacote>
+          <img src={placeholder} alt="Pacote" />
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor
+          </p>
+        </S.Pacote>
+        <Button className="">
+          <Link to="/pacotes">Conhecer pacotes</Link>
         </Button>
-        <p>Secondary Pequeno</p>
-        <Button className="small secondary">Secondary Pequeno</Button>
-        <p>Fantasmatico</p>
-        <Button className="ghost">Fantasmatico</Button>
-        <p>Fantasmatico P</p>
-        <Button className="ghost small">Fantasmatico P</Button>
-        <p>Fantasmatico Indisponivel</p>
-        <Button className="ghost disabled">Fantasmatico Indisponivel</Button>
-        <p> Indisponivel Padrao</p>
-        <Button className="disabled ">Indisponivel Padrao</Button>
-        <h2>Tags</h2>
-        <p> Tag 1</p>
-        <Tag>Tag Aqui</Tag>
-        <p> Tag 2</p>
-        <Tag className="ghost">Tag Aqui</Tag>
-        <h2>Checkbox</h2>
-        <CheckBox>Abacaxi</CheckBox>
-        <CheckBox>Pera</CheckBox>
-        <CheckBox>Amendoim</CheckBox>
-        <CheckBox className="disabled">maça</CheckBox>
-        <h2>Radio</h2>
-        <RadioButton name="teste">McQueen</RadioButton>
-        <RadioButton name="teste">Tomate</RadioButton>
-        <RadioButton name="teste">Tomato</RadioButton>
-        <RadioButton className="disabled">Relanpagos</RadioButton>
-        <h2>Form</h2>
-        <Form>Form 1</Form>
-        <Form placeholder="Placeholder">Form 1</Form>
-        <Form placeholder="Placeholder" className="disabled">
-          Form 1
-        </Form>
-        <Form type="date">Form 2</Form>
-      </S.Teste>
+      </S.Pacotes>
+      <S.Comunidades>
+        <S.Subtitulo>Comunidades parceiras</S.Subtitulo>
+        <Button className="disabled">
+          <Link to="/pacotes">Button</Link>
+        </Button>
+      </S.Comunidades>
+      <S.App>
+        <h2>Baixe o nosso app no seu celular</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+          purus{" "}
+        </p>
+        <div>
+          <Button className="disabled small">App Store</Button>
+          <Button className="disabled small">Google Play</Button>
+        </div>
+        <img alt="Mockup Celular" src={mockup} />
+      </S.App>
       <Footer />
     </>
   );
