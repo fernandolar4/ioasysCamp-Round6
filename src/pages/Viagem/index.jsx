@@ -30,7 +30,7 @@ const Viagem = () => {
             <span>0</span>
           </div>
         </S.Info>
-        <Button className="secondary">
+        <Button className="secondary medium">
           <Link to="/resumo">Comprar Pacote</Link>
         </Button>
         <S.Dicas>
