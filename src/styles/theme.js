@@ -9,7 +9,7 @@ const theme = {
     secondaryLight: "#EE5866",
     neutralDarker: "#252A27",
     neutralDark: "#545956",
-    neutralMediumDark: "#ACAEAD",
+    neutralMediumDark: "#9B9E9D",
     neutralMediumLight: "#D1D2D1",
     neutralLight: "#F5F5F5",
     neutralLighter: "#FCFCFC",
