@@ -9,6 +9,10 @@ export const NavBar = styled.nav`
   height: 56px;
   padding: 22px 33px 22px;
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   ul {
     display: flex;
     justify-content: space-between;

@@ -10,6 +10,7 @@ export const Button = styled.button`
   width: 290px;
   :hover {
     background-color: ${({ theme }) => theme.colors.primaryDark};
+    box-shadow: 0px 2px 30px rgba(37, 42, 39, 0.35);
   }
 
   a {
