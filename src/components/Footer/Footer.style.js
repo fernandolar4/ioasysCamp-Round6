@@ -13,8 +13,9 @@ export const Footer = styled.footer`
 
   .lateral {
     background-image: url(${pattern});
-    height: 266px;
-    width: 27px;
+    background-position: center top;
+    height: 280px;
+    width: 28px;
   }
 
   article {
