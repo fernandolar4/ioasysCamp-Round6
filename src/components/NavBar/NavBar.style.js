@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavBar = styled.nav`
+export const Navbar = styled.nav`
   box-sizing: border-box;
   background: ${({ theme }) => theme.colors.neutralLighter};
   display: flex;
