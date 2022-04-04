@@ -11,7 +11,7 @@ export const Footer = styled.footer`
 
   color: ${({ theme }) => theme.colors.neutralDarker};
 
-  box-shadow: 0px 2px 30px rgba(37, 42, 39, 0.25);
+  box-shadow: 0px 2px 20px rgba(37, 42, 39, 0.2);
 
   article {
     display: flex;

@@ -89,3 +89,8 @@ ${
     }
   }
 `;
+
+export const Espace = styled.nav`
+  display: block;
+  margin-bottom: 56px;
+`;
