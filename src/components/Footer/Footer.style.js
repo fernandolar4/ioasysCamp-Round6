@@ -1,22 +1,27 @@
 import styled from "styled-components";
+import pattern from "../../assets/pattern/patternFooter.svg";
 
 export const Footer = styled.footer`
-  width: 100vw;
   background: ${({ theme }) => theme.colors.neutralLight};
-  padding: 34px 32px 13px;
-
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   color: ${({ theme }) => theme.colors.neutralDarker};
 
   box-shadow: 0px 2px 20px rgba(37, 42, 39, 0.2);
 
+  .lateral {
+    background-image: url(${pattern});
+    height: 266px;
+    width: 27px;
+  }
+
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 34px;
     margin-bottom: 22px;
 
     h4 {
@@ -32,20 +37,28 @@ export const Footer = styled.footer`
       font-weight: 400;
       margin-bottom: 17px;
     }
-    a:hover {
+    a:hover,
+    a:active {
       color: ${({ theme }) => theme.colors.primary};
       text-decoration: underline;
     }
   }
-  div {
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.neutralMediumDark};
-    width: 164px;
-    margin-bottom: 12px;
-  }
-  p {
-    color: ${({ theme }) => theme.colors.primary.neutralDarker};
-    font-size: 10px;
-    font-weight: 400;
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .barra {
+      height: 1px;
+      background-color: ${({ theme }) => theme.colors.neutralMediumDark};
+      width: 164px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: ${({ theme }) => theme.colors.primary.neutralDarker};
+      font-size: 10px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
   }
 `;
