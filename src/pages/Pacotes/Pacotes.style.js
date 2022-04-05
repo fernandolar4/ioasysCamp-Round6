@@ -13,13 +13,12 @@ export const Pacotes = styled.section`
   section {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
-    @media (min-width: 345px) {
-      justify-content: space-between;
-    }
+
     a {
       text-decoration: none;
-      div {
+      .containerFoto {
         box-sizing: border-box;
         width: 100%;
         display: flex;
@@ -27,20 +26,30 @@ export const Pacotes = styled.section`
 
         img {
           object-fit: cover;
-          height: 160px;
-          width: 140px;
+          height: 214px;
+          width: 75vw;
           margin-bottom: 20px;
           border-radius: 15px;
 
           filter: drop-shadow(0px 2px 20px rgb(37 42 39 / 0.2));
         }
-        span {
-          color: ${({ theme }) => theme.colors.neutralDarker};
-          font-size: 14px;
-          font-weight: 700;
-          margin-bottom: 50px;
-          margin-left: 8px;
+        .containerTexto {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            color: ${({ theme }) => theme.colors.neutralDarker};
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
         }
+      }
+      .containerBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 64px;
       }
     }
   }
