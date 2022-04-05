@@ -31,6 +31,8 @@ export const Pacotes = styled.section`
           width: 140px;
           margin-bottom: 20px;
           border-radius: 15px;
+
+          filter: drop-shadow(0px 2px 20px rgb(37 42 39 / 0.2));
         }
         span {
           color: ${({ theme }) => theme.colors.neutralDarker};
