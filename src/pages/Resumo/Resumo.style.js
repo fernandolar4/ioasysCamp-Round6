@@ -20,5 +20,14 @@ export const Resumo = styled.section`
   div {
     display: flex;
     justify-content: center;
+    .wpp {
+      display: flex;
+      align-items: top;
+      justify-content: center;
+      padding-bottom: 5px;
+      div {
+        margin-right: 8px;
+      }
+    }
   }
 `;

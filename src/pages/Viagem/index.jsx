@@ -17,7 +17,10 @@ const Viagem = () => {
       <NavBar />
       <S.Viagem>
         <S.Info>
-          <h5>Início/Pacotes de turimo/{Mock.pacotes[1].nome}</h5>
+          <h5 className="breadcrumb">
+            <Link to="/">Início</Link>/<Link to="/">Pacotes de turimo</Link>/
+            {Mock.pacotes[1].nome}
+          </h5>
           <img src={Mock.pacotes[1].foto} alt="Foto do local" />
           <div className="nomeValor">
             <span>{Mock.pacotes[1].nome}</span>
@@ -30,9 +33,11 @@ const Viagem = () => {
             <span>0</span>
           </div>
         </S.Info>
-        <Button className="secondary medium">
-          <Link to="/resumo">Comprar Pacote</Link>
-        </Button>
+        <div className="containerBtn">
+          <Button className="">
+            <Link to="/resumo">Comprar Pacote</Link>
+          </Button>
+        </div>
         <S.Dicas>
           <div className="iconName">
             <img src={Camping} alt="Icone" />
@@ -48,7 +53,7 @@ const Viagem = () => {
           </div>
           <div className="iconName">
             <img src={Mountain} alt="Icone" />
-            <p>Hospedagem</p>
+            <p>Atividades</p>
           </div>
           <div className="containerDicas">
             <div className="barraV" />
@@ -60,7 +65,7 @@ const Viagem = () => {
           </div>
           <div className="iconName">
             <img src={Calendar} alt="Icone" />
-            <p>Hospedagem</p>
+            <p>Datas</p>
           </div>
           <div className="containerDicas">
             <div className="barraV" />
@@ -72,7 +77,7 @@ const Viagem = () => {
           </div>
           <div className="iconName">
             <img src={Mapa} alt="Icone" />
-            <p>Hospedagem</p>
+            <p>Dicas de viagem</p>
           </div>
           <div className="containerDicas">
             <div className="barraV" />

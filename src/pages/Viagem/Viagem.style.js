@@ -2,6 +2,22 @@ import styled from "styled-components";
 
 export const Viagem = styled.section`
   padding: 31px 32px 30px;
+  .breadcrumb {
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.neutralDark};
+    }
+    a:hover,
+    a:active {
+      color: ${({ theme }) => theme.colors.primary};
+      text-decoration: underline;
+    }
+  }
+  .containerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 export const Info = styled.section`
   h5 {
