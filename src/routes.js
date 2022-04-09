@@ -1,4 +1,5 @@
 import { Routes as Switch, Route } from "react-router-dom";
+import Cadastro from "./pages/Cadastro";
 import Carrinho from "./pages/Carrinho";
 import Checkout from "./pages/Checkout";
 import Compras from "./pages/Compras";
@@ -19,6 +20,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route path="/" exact element={<Home />} />
+      <Route path="/cadastro" exact element={<Cadastro />} />
       <Route path="/carrinho" exact element={<Carrinho />} />
       <Route path="/checkout" exact element={<Checkout />} />
       <Route path="/compras" exact element={<Compras />} />

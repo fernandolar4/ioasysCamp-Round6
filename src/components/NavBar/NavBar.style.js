@@ -6,6 +6,11 @@ export const NavStyles = styled.div`
   *::before {
     font-family: "Outfit", sans-serif;
   }
+
+  #navbarContainer {
+    box-shadow: 0px 5px 20px rgba(37, 42, 39, 0.2);
+  }
+
   #linksOffscreen {
     color: ${({ theme }) => theme.colors.neutralDarker};
     padding-left: 32px;

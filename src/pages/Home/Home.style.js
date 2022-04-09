@@ -63,11 +63,12 @@ export const Comunidade = styled.div`
   margin-bottom: 17px;
 
   img {
-    width: 172px;
-    height: 190px;
+    width: 200px;
+    height: 220px;
     border-radius: 15px;
     margin-bottom: 31px;
     object-fit: cover;
+    object-position: center;
   }
   h3 {
     font-weight: 600;

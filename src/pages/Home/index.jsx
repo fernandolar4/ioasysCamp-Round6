@@ -10,6 +10,9 @@ import mockup from "../../assets/mockMobile.png";
 import Planta from "../../assets/icons/Planta.svg";
 import Camping from "../../assets/icons/Camping.svg";
 import Marcador from "../../assets/icons/Marcador.svg";
+import img1 from "../../assets/comunidade.png";
+import img2 from "../../assets/desenvolver.png";
+import img3 from "../../assets/visao.png";
 
 import { Link } from "react-router-dom";
 
@@ -37,9 +40,8 @@ const Home = () => {
           <div className="containerParceiras">
             <div className="barraV" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
+              Fique hospedado na casa de um anfitrião morador local. Você poderá
+              participar de momentos únicos no dia a dia da comunidade
             </p>
           </div>
           <div className="iconName">
@@ -49,9 +51,8 @@ const Home = () => {
           <div className="containerParceiras">
             <div className="barraV" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
+              Um dia de pesca, plantio da lavoura ou criar peças de artesanato:
+              participe das atividades que fazem parte da vida da comunidade
             </p>
           </div>
           <div className="iconName">
@@ -61,9 +62,8 @@ const Home = () => {
           <div className="containerParceiras">
             <div className="barraV" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
+              Através das nossas viagens você ajuda fomentando o comércio local
+              e trazendo maior visibilidade para o trabalho das comunidades
             </p>
           </div>
         </S.Parceiras>
@@ -73,32 +73,29 @@ const Home = () => {
       </S.Pacotes>
       <S.Barra />
       <S.Comunidades>
-        <S.Subtitulo>Comunidades parceiras</S.Subtitulo>
+        <S.Subtitulo>Nosso propósito</S.Subtitulo>
         <S.Comunidade>
-          <img src={placeholder} alt="Pacote" />
-          <h3>Lorem ipsum</h3>
+          <img src={img1} alt="Pacote" />
+          <h3>Resgatar comunidades</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor
+            Procuramos por comunidades rurais em dificuldades financeiras
+            principalmente no Norte e Nordeste do país
           </p>
         </S.Comunidade>
         <S.Comunidade>
-          <img src={placeholder} alt="Pacote" />
-          <h3>Lorem ipsum</h3>
+          <img src={img2} alt="Pacote" />
+          <h3>Proporcionar desenvolvimento</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor
+            Queremos não somente oferecer doações, mas ajudar essas comunidades
+            a se tornarem autossustentáveis
           </p>
         </S.Comunidade>
         <S.Comunidade>
-          <img src={placeholder} alt="Pacote" />
-          <h3>Lorem ipsum</h3>
+          <img src={img3} alt="Pacote" />
+          <h3>Gerar visibilidade</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor
+            O objetivo é conseguir aumentar a visibilidade para essas
+            comunidades, que antes nem em mapas podiam ser encontradas
           </p>
         </S.Comunidade>
         <Button className="">
