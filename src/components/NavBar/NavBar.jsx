@@ -9,7 +9,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 const NavBar = () => {
   return (
     <S.NavStyles>
-      <Navbar bg="light" expand="false" sticky="top" id="navbarContainer">
+      <Navbar bg="light" expand="false" sticky="top" id="navb">
         <Container fluid>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Brand href="/">Logo</Navbar.Brand>
@@ -27,18 +27,18 @@ const NavBar = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <S.NavStyles>
-                  <Nav.Link
-                    id="linksOffscreen"
-                    className="teste"
-                    href="/pacotes"
-                  >
+                  <Nav.Link id="linksOffscreen" className="teste" href="/sobre">
                     Sobre nós
                   </Nav.Link>
-                  <Nav.Link id="linksOffscreen" href="#action2">
+                  <Nav.Link id="linksOffscreen" href="/pacotes">
                     Pacotes turísticos
                   </Nav.Link>
-                  <Nav.Link id="linksOffscreen">Pacotes turísticos</Nav.Link>
-                  <Nav.Link id="linksOffscreen">Minha conta</Nav.Link>
+                  <Nav.Link id="linksOffscreen" href="/login">
+                    login
+                  </Nav.Link>
+                  <Nav.Link id="linksOffscreen" href="/cadastro">
+                    cadastro
+                  </Nav.Link>
                 </S.NavStyles>
               </Nav>
             </Offcanvas.Body>
