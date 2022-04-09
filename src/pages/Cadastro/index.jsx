@@ -19,7 +19,11 @@ const Cadastro = () => {
           <Form type="text" placeholder="Sales Souza">
             Sobrenome
           </Form>
-          <Form type="date" placeholder="01/01/1999">
+          <Form
+            type="date"
+            placeholder="01/01/1999"
+            className="backgroundWhite"
+          >
             Data de nascimento
           </Form>
           <Form type="email" placeholder="example@email.com">
@@ -28,17 +32,19 @@ const Cadastro = () => {
           <Form type="password" placeholder="••••••••••••">
             Senha
           </Form>
-          <p>
+          <p className="senhaDica">
             A senha deve conter no mínimo 8 caracteres, incluindo pelo menos uma
             letra maiúscula e um número
           </p>
-          <div>
-            <CheckBox>Concordo com os Termos de uso</CheckBox>
+          <div className="termos">
+            <CheckBox>
+              Concordo com os <a>Termos de uso</a>
+            </CheckBox>
           </div>
-          <Button>Confirmar cadastro</Button>
+          <Button type="submit">Confirmar cadastro</Button>
         </form>
-        <p>
-          Está com dificuldades para realizar o cadastro?
+        <div className="dificuldade">
+          <p>Está com dificuldades para realizar o cadastro?</p>
           <a href="https://web.whatsapp.com">
             Entre em contato{" "}
             <svg
@@ -58,7 +64,7 @@ const Cadastro = () => {
               />
             </svg>
           </a>
-        </p>
+        </div>
       </S.cadastro>
       <Footer />
     </>

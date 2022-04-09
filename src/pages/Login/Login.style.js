@@ -60,6 +60,9 @@ export const loginScreen = styled.main`
       font-size: 14px;
     }
 
+    .loginOptionsIcons {
+      display: flex;
+    }
     a:first-child {
       margin-right: 40px;
     }

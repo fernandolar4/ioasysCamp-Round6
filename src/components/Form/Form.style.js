@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
   filter: drop-shadow(0px 2px 10px rgba(37, 42, 39, 0.1));
 
   label {
@@ -10,6 +11,7 @@ export const Form = styled.div`
     font-weight: 400;
     font-size: 12px;
     margin-bottom: 8px;
+    background-color: transparent !important;
   }
   input {
     width: 296px;

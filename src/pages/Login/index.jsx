@@ -31,7 +31,7 @@ const Login = () => {
         <div className="linha" />
         <section className="loginOptions">
           <p>Acessar com:</p>
-          <div>
+          <div className="loginOptionsIcons">
             <a>
               <svg
                 width="40"
