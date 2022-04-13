@@ -42,7 +42,6 @@ export const Footer = styled.footer`
     }
     a:hover,
     a:active {
-      color: ${({ theme }) => theme.colors.primary};
       text-decoration: underline;
     }
   }
@@ -53,7 +52,7 @@ export const Footer = styled.footer`
     width: 100%;
     .barra {
       height: 1px;
-      background-color: ${({ theme }) => theme.colors.neutralMediumDark};
+      background-color: ${({ theme }) => theme.colors.neutralLighter};
       width: 164px;
       margin-bottom: 12px;
     }
