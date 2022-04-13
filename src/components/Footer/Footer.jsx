@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <S.Footer>
-      <div className="lateral"></div>
       <div>
+        <div className="containerBg"></div>
         <article>
           <h4>Cobé - turismo comunitário</h4>
           <Link to="/sobre">Sobre a empresa</Link>
@@ -16,9 +16,9 @@ const Footer = () => {
         <div className="bottom">
           <div className="barra" />
           <p>Cobé - Turismo Comunitário © 2022</p>
+          <div className="containerBg"></div>
         </div>
       </div>
-      <div className="lateral"></div>
     </S.Footer>
   );
 };

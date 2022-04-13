@@ -67,7 +67,7 @@ const Home = () => {
             </p>
           </div>
         </S.Parceiras>
-        <Button className="">
+        <Button className="secondary">
           <Link to="/pacotes">Conheça nossos pacotes</Link>
         </Button>
       </S.Pacotes>
@@ -99,7 +99,7 @@ const Home = () => {
           </p>
         </S.Comunidade>
         <Button className="">
-          <Link to="/pacotes">Conhecer pacotes</Link>
+          <Link to="/pacotes">Saiba mais sobre nosso projeto</Link>
         </Button>
       </S.Comunidades>
       <S.Barra />
@@ -111,7 +111,7 @@ const Home = () => {
           turistas.
         </p>
         <div>
-          <Button className=" small app">
+          <Button className="secondary small  ">
             <svg
               width="20"
               height="24"
@@ -125,7 +125,7 @@ const Home = () => {
               />
             </svg>
           </Button>
-          <Button className=" small">
+          <Button className=" secondary small">
             <svg
               width="22"
               height="24"

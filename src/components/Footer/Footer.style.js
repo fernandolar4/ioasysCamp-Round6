@@ -1,21 +1,23 @@
 import styled from "styled-components";
-import pattern from "../../assets/pattern/patternFooter.svg";
+import pattern from "../../assets/pattern/pattern.svg";
 
 export const Footer = styled.footer`
-  background: ${({ theme }) => theme.colors.neutralLight};
+  background: ${({ theme }) => theme.colors.primary};
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  color: ${({ theme }) => theme.colors.neutralDarker};
-
+  color: ${({ theme }) => theme.colors.neutralLighter};
+  border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 2px 20px rgba(37, 42, 39, 0.2);
 
-  .lateral {
+  ${
+    "" /* .lateral {
     background-image: url(${pattern});
     background-position: center top;
     height: 280px;
     width: 28px;
+  }  */
   }
 
   article {
@@ -29,11 +31,11 @@ export const Footer = styled.footer`
       font-size: 17px;
       font-weight: 600;
       margin-bottom: 24px;
-      color: ${({ theme }) => theme.colors.neutralDarker};
+      color: ${({ theme }) => theme.colors.neutralLighter};
     }
     a {
       text-decoration: none;
-      color: ${({ theme }) => theme.colors.neutralDarker};
+      color: ${({ theme }) => theme.colors.neutralLighter};
       font-size: 12px;
       font-weight: 400;
       margin-bottom: 17px;
@@ -48,7 +50,7 @@ export const Footer = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
     .barra {
       height: 1px;
       background-color: ${({ theme }) => theme.colors.neutralMediumDark};
@@ -61,5 +63,12 @@ export const Footer = styled.footer`
       font-weight: 400;
       margin-bottom: 12px;
     }
+  }
+  .containerBg {
+    position: absolute;
+    left: 0px;
+    background-image: url(${pattern});
+    height: 40px;
+    width: 100%;
   }
 `;
