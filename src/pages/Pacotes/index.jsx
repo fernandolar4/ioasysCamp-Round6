@@ -8,14 +8,18 @@ import { Link } from "react-router-dom";
 import Mock from "../../mock/pacotes.json";
 
 const Pacotes = () => {
+  const alternatingclass = ["containerBg", "containerBgB"];
   return (
     <>
       <NavBar />
       <S.Pacotes>
-        <h2>Pacotes de Turismo</h2>
         <section>
-          {Mock.pacotes.map((pacote) => (
+          {Mock.pacotes.map((pacote, index) => (
             <Link to="/viagem">
+              <h2>Pacotes de Turismo</h2>
+              <div
+                className={alternatingclass[index % alternatingclass.length]}
+              ></div>
               <div className="containerFoto">
                 <img src={pacote.foto} alt="foto da localidade" />
                 <div className="containerTexto">
@@ -23,8 +27,8 @@ const Pacotes = () => {
                   <p>R${pacote.valor}</p>
                 </div>
               </div>
-              <div className="containerBtn">
-                <Button>Fazer Reserva</Button>
+              <div className="containerBtn ">
+                <Button className="secondary">Ver pacote</Button>
               </div>
             </Link>
           ))}

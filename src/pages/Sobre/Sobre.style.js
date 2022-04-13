@@ -1,7 +1,17 @@
 import styled from "styled-components";
+import pattern from "../../assets/pattern/pattern.svg";
 
 export const sobreEmpresa = styled.main`
   padding: 40px 32px 40px;
+
+  .containerBgB {
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+    background-image: url(${pattern});
+    height: 40px;
+    width: 55%;
+  }
 
   section {
     margin-bottom: 40px;
@@ -15,6 +25,10 @@ export const sobreEmpresa = styled.main`
     }
 
     img {
+      width: 296px;
+      height: 300px;
+      filter: drop-shadow(0px 2px 35px rgba(37, 42, 39, 0.1));
+      border-radius: 20px;
       margin-bottom: 40px;
     }
   }

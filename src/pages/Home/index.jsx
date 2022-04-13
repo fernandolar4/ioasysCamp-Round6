@@ -26,7 +26,7 @@ const Home = () => {
           <p>como essa atividade pode ajudar a erradicar a pobreza</p>
         </article>
         <Button className="medium">
-          <Link to="/pacotes">Saiba como é possível</Link>
+          <Link to="/sobre">Saiba como é possível</Link>
         </Button>
       </S.Capa>
 
@@ -99,7 +99,7 @@ const Home = () => {
           </p>
         </S.Comunidade>
         <Button className="">
-          <Link to="/pacotes">Saiba mais sobre nosso projeto</Link>
+          <Link to="/sobre#proposito">Saiba mais sobre nosso projeto</Link>
         </Button>
       </S.Comunidades>
       <S.Barra />

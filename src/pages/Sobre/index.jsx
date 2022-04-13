@@ -11,6 +11,7 @@ const Sobre = () => {
       <NavBar />
       <S.sobreEmpresa>
         <section>
+          <div className="containerBgB"></div>
           <h2>Sobre nós</h2>
           <img
             src={img1}
@@ -41,8 +42,9 @@ const Sobre = () => {
             e valorização da cultura local.
           </p>
         </section>
-        <div className="linha"></div>
+        <div className="linha" id="proposito"></div>
         <section>
+          <div className="containerBgB"></div>
           <h2>Nosso propósito</h2>
           <img
             src={img2}
