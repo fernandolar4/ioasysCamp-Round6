@@ -59,7 +59,7 @@ export const RadioButton = styled.div`
       content: "";
       position: absolute;
       left: 4px;
-      top: 4px;
+      top: 5px;
       background: ${({ theme }) => theme.colors.primary};
       width: 12px;
       height: 12px;

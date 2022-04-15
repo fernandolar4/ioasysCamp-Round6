@@ -38,4 +38,10 @@ export const Form = styled.div`
   .disabled {
     pointer-events: none;
   }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
