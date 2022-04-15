@@ -34,6 +34,9 @@ export const Form = styled.div`
     &.disabled {
       background-color: ${({ theme }) => theme.colors.neutralMediumLight};
     }
+    &.small {
+      width: 138px;
+    }
   }
   .disabled {
     pointer-events: none;

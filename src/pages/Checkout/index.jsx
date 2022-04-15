@@ -8,7 +8,6 @@ import Button from "../../components/Button";
 import Arrow from "../../assets/icons/Arrow.svg";
 
 import * as S from "./Checkout.style";
-import { Dropdown } from "react-bootstrap";
 
 const Checkout = () => {
   return (
@@ -16,7 +15,7 @@ const Checkout = () => {
       <NavBar />
       <S.Checkout>
         <div className="checkoutName">
-          <img src={Arrow} />
+          <img src={Arrow} alt="Back Arrow" />
           <h2>Checkout</h2>
         </div>
         <div className="checkoutTotal">
@@ -30,29 +29,26 @@ const Checkout = () => {
         <div className="linha"></div>
         <h2>Pagamento</h2>
         <form>
-          <div>
-            <RadioButton name="checkout">Boleto</RadioButton>
-            <RadioButton name="checkout">PIX</RadioButton>
-            <RadioButton name="checkout">Cartão de crédito</RadioButton>
+          <div className="checkoutParcelas">
+            <label for="parcelas">Parcelar a compra</label>
+            <select name="parcelas" id="parcelas">
+              <option value="0">À vista</option>
+              <option value="1">x1 Sem Juros</option>
+              <option value="2">x2 Sem Juros</option>
+              <option value="3">x3 Sem Juros</option>
+            </select>
           </div>
-          <Dropdown>
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              Parcelar a compra
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">1x Sem Juros</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">2x Sem Juros</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">3x Sem Juros</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
           <Form type="number" placeholder="0000 0000 0000 0000">
             Número do cartão
           </Form>
           <Form type="number">Nome impresso no cartão</Form>
-          <div>
-            <Form type="number">Código</Form>
-            <Form type="date">Validade</Form>
+          <div className="checkoutFormsSide">
+            <Form type="number " className="small">
+              Código
+            </Form>
+            <Form type="date" className="small">
+              Validade
+            </Form>
           </div>
 
           <Button>Finalizar compra</Button>
