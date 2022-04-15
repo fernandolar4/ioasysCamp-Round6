@@ -14,6 +14,7 @@ export const Form = styled.div`
     background-color: transparent !important;
   }
   input {
+    background-color: white;
     width: 296px;
     height: 51px;
     font-size: 14px;

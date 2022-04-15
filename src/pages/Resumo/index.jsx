@@ -11,8 +11,9 @@ const Resumo = () => {
       <S.Resumo>
         <h2>Sua compra foi efetuada com sucesso!</h2>
         <p>
-          Agora, para concluir o pagamento e confirmar a sua viagem, você será
-          redirecionado para o nosso Whats App.
+          Fique de olho no seu e-mail, vamos enviar as informações sobre sua
+          viagem por lá! Qualquer dúvida fique a vontade para chamar a gente
+          pelo Whats App:
         </p>
         <div>
           <Button>

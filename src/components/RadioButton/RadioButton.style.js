@@ -13,15 +13,19 @@ export const RadioButton = styled.div`
     position: absolute;
     opacity: 0;
 
+
+
     & + label {
       position: relative;
       cursor: pointer;
       padding: 0;
+      margin-right: 8px;
     }
 
     & + label:before {
       content: "";
       margin-right: 8px;
+      
       display: inline-block;
       vertical-align: text-top;
       width: 20px;
@@ -58,11 +62,11 @@ export const RadioButton = styled.div`
     &:checked + label:after {
       content: "";
       position: absolute;
-      left: 4px;
-      top: 5px;
+      left: 2px;
+      top: 3.5px;
       background: ${({ theme }) => theme.colors.primary};
-      width: 12px;
-      height: 12px;
+      width: 16px;
+      height: 16px;
       border-radius: 50px;
       
       

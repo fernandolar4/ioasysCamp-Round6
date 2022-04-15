@@ -13,6 +13,20 @@ export const sobreEmpresa = styled.main`
     width: 55%;
   }
 
+  article {
+    margin-bottom: 40px;
+    .sobreSubtitulo {
+      display: flex;
+      align-items: center;
+
+      svg {
+        height: 20px;
+        margin-right: 12px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
   section {
     margin-bottom: 40px;
 

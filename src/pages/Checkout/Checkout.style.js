@@ -1,14 +1,30 @@
 import styled from "styled-components";
 
 export const Checkout = styled.main`
+  padding: 40px 32px;
+  .checkoutName {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+
+    a {
+      margin-right: 10px;
+      height: 6px;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+    }
+  }
   label {
     color: ${({ theme }) => theme.colors.neutralDarker};
     font-weight: 400;
     font-size: 12px;
     margin-bottom: 8px;
-    background-color: transparent;
   }
   select {
+    background-color: ${({ theme }) => theme.colors.neutralLighter};
     width: 296px;
     height: 51px;
     font-size: 14px;
@@ -24,13 +40,46 @@ export const Checkout = styled.main`
     }
   }
 
+  .checkoutTotal {
+    margin-bottom: 32px;
+
+    background-color: ${({ theme }) => theme.colors.primary};
+    box-shadow: 0px 2px 35px rgba(37, 42, 39, 0.1);
+    border-radius: 20px;
+    width: 296px;
+    height: 100px;
+    color: ${({ theme }) => theme.colors.neutralLighter};
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: right;
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      white-space: nowrap;
+    }
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+    }
+  }
+
+  .checkoutRadio {
+    display: flex;
+    align-items: center;
+  }
+
   .checkoutParcelas {
     display: flex;
     flex-direction: column;
   }
 
   .checkoutFormsSide {
+    max-width: 297px;
     display: flex;
+    justify-content: space-between;
   }
 
   .linha {

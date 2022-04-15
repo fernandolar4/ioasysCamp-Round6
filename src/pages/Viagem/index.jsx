@@ -35,7 +35,7 @@ const Viagem = () => {
         </S.Info>
         <div className="containerBtn">
           <Button className="">
-            <Link to="/resumo">Comprar Pacote</Link>
+            <Link to="/carrinho">Comprar Pacote</Link>
           </Button>
         </div>
         <S.Dicas>
