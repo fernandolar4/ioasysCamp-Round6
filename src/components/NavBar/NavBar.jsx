@@ -13,7 +13,7 @@ const NavBar = () => {
         <Container fluid>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Brand href="/">Logo</Navbar.Brand>
-          <Nav.Link>
+          <Nav.Link href="/carrinho">
             <img src={Carrinho} alt="Carrinho" />
           </Nav.Link>
           <Navbar.Offcanvas

@@ -6,7 +6,7 @@ const Checkout = () => {
   return (
     <>
       <NavBar />
-      <h1>Checkout</h1>
+      <h2>Checkout</h2>
       <Footer />
     </>
   );
