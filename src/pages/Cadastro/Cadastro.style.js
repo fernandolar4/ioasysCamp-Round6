@@ -1,16 +1,24 @@
 import styled from "styled-components";
+import pattern from "../../assets/pattern/pattern.svg";
 
 export const cadastro = styled.main`
   padding: 40px 32px 60px;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
-  @media (min-width: 768px) {
-    align-items: center;
+ 
+  .containerBgB {
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+    background-image: url(${pattern});
+    height: 40px;
+    width: 55%;
+  }
     h2 {
       align-items: flex-start;
+      margin-right: auto;
     }
     form {
       display: flex;
@@ -26,6 +34,7 @@ export const cadastro = styled.main`
     line-height: 120%;
     margin-bottom: 24px;
   }
+
   .senhaDica {
     color: ${({ theme }) => theme.colors.neutralDark};
     font-weight: 400;
@@ -58,6 +67,8 @@ export const cadastro = styled.main`
   }
 
   .dificuldade {
+    display: flex;
+    flex-direction: column;
     p {
       font-weight: 400;
       font-size: 12px;

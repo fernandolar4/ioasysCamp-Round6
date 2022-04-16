@@ -1,5 +1,13 @@
 import styled from "styled-components";
 import bg from "../../assets/Background.png";
+import bgD from "../../assets/pattern/backgroundDesktop.svg";
+
+export const containerHome = styled.main`
+  overflow-x: hidden;
+  background-image: url(${bgD});
+  background-position: 1%;
+  background-repeat: repeat-y;
+`;
 
 export const Subtitulo = styled.h2`
   width: 257px;
@@ -8,6 +16,15 @@ export const Subtitulo = styled.h2`
   font-size: 24px;
   margin-bottom: 48px;
   text-align: center;
+  @media (min-width: 768px) {
+    width: auto;
+
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 120px;
+
+    margin-bottom: 120px;
+  }
 `;
 
 export const Capa = styled.section`
@@ -45,6 +62,34 @@ export const Capa = styled.section`
       font-size: 14px;
     }
   }
+
+  @media (min-width: 768px) {
+    padding-left: 120px;
+
+    article {
+      margin-right: auto;
+      text-align: left;
+      align-items: flex-start;
+      margin-bottom: 0px;
+      h1 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+      }
+
+      p {
+        width: auto;
+
+        font-size: 24px;
+        margin-left: 0px;
+      }
+    }
+    .btn {
+      margin-top: -50px;
+      margin-right: auto;
+      padding: 0px;
+    }
+  }
 `;
 
 export const Comunidades = styled.main`
@@ -53,6 +98,25 @@ export const Comunidades = styled.main`
   flex-direction: column;
   width: 100%;
   margin-bottom: 76px;
+  @media (min-width: 768px) {
+    div {
+      width: 100vw;
+
+      display: flex;
+
+      h3 {
+        color: ${({ theme }) => theme.colors.primary};
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+  }
 `;
 
 export const Comunidade = styled.div`
@@ -99,6 +163,22 @@ export const App = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    img {
+      margin-left: 20;
+    }
+  }
+  .appParte1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .appApps {
+    @media (min-width: 768px) {
+      max-width: 500px;
+    }
+  }
   h2 {
     width: 178px;
     font-weight: 600;
@@ -106,6 +186,13 @@ export const App = styled.section`
     text-align: center;
     color: ${({ theme }) => theme.colors.neutralDarker};
     margin-bottom: 12px;
+    @media (min-width: 768px) {
+      width: 353px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+    }
   }
   p {
     width: 216px;
@@ -113,6 +200,13 @@ export const App = styled.section`
     font-size: 12px;
     text-align: center;
     margin-bottom: 53px;
+    @media (min-width: 768px) {
+      width: 353px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+    }
   }
   div {
     width: 100%;
@@ -129,10 +223,22 @@ export const App = styled.section`
 
 export const Parceiras = styled.section`
   margin-bottom: 11px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
   .iconName {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+    @media (min-width: 768px) {
+      flex-direction: column;
+      justify-content: space-around;
+      img {
+        height: 90px;
+        margin-bottom: 56px;
+      }
+    }
     img {
       margin-right: 12px;
     }
@@ -140,6 +246,11 @@ export const Parceiras = styled.section`
       font-size: 18px;
       font-weight: 600;
       color: ${({ theme }) => theme.colors.neutralDarker};
+      @media (min-width: 768px) {
+        font-weight: 600;
+        font-size: 24px;
+        color: ${({ theme }) => theme.colors.primary};
+      }
     }
   }
 
@@ -153,6 +264,10 @@ export const Parceiras = styled.section`
       margin-left: 10px;
       margin-right: 23px;
       margin-bottom: 19px;
+      @media (min-width: 768px) {
+        background-color: transparent;
+        margin-bottom: 160px;
+      }
     }
     p {
       font-size: 12px;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import pattern from "../../assets/pattern/pattern.svg";
 
 export const loginScreen = styled.main`
   display: flex;
@@ -6,12 +7,24 @@ export const loginScreen = styled.main`
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 32px 0px;
-  h2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-    margin-bottom: 56px;
+  .containerBgB {
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+    background-image: url(${pattern});
+    height: 40px;
+    width: 55%;
+  }
+
+  article {
+    text-align: left;
+    max-width: 300px;
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;
+    }
   }
 
   p,

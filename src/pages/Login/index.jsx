@@ -10,7 +10,11 @@ const Login = () => {
     <>
       <NavBar />
       <S.loginScreen>
-        <h2>Você não está conectado a nenhuma conta ainda!</h2>
+        <div className="containerBgB"></div>
+        <article>
+          <h2>Login</h2>
+          <p>Você ainda não está conectado!</p>
+        </article>
         <div className="formulario">
           <Form type="email" placeholder="exemplo@email.com">
             E-mail

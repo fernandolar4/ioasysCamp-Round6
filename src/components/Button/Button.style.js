@@ -9,6 +9,10 @@ export const Button = styled.button`
   height: 52px;
   width: 290px;
   box-shadow: 0px 2px 20px rgba(37, 42, 39, 0.2);
+  @media (min-width: 768px) {
+    width: 332px;
+    height: 68px;
+  }
   :hover {
     background-color: ${({ theme }) => theme.colors.primaryDark};
     box-shadow: 0px 2px 30px rgba(37, 42, 39, 0.35);
@@ -20,6 +24,11 @@ export const Button = styled.button`
     display: block;
     height: 100%;
     color: ${({ theme }) => theme.colors.neutralLighter};
+    @media (min-width: 768px) {
+      font-weight: 600;
+      font-size: 18px;
+      padding-top: 20px;
+    }
   }
 
   &.small {
@@ -27,6 +36,10 @@ export const Button = styled.button`
     width: 140px;
     a {
       padding-top: 15px;
+    }
+    @media (min-width: 768px) {
+      width: 176px;
+      height: 64px;
     }
   }
 

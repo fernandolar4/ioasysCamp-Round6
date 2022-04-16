@@ -11,6 +11,7 @@ const Cadastro = () => {
     <>
       <NavBar />
       <S.cadastro>
+        <div className="containerBgB"></div>
         <h2>Cadastro:</h2>
         <form className="formCadastro">
           <Form type="text" placeholder="Maria Fernanda">
