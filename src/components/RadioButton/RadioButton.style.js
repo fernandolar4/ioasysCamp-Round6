@@ -31,18 +31,18 @@ export const RadioButton = styled.div`
       width: 20px;
       height: 20px;
       background: white;
-      border: 1.6px solid black;
+      border: 1px solid black;
       border-radius: 50px;
     }
 
     &:hover + label:before {
       background: ${({ theme }) => theme.colors.primary};
-      border: 1.6px solid transparent;
+      border: 1px solid transparent;
     }
 
     &:checked + label:before {
       background: transparent;
-      border: 1.6px solid ${({ theme }) => theme.colors.primary};
+      border: 1px solid ${({ theme }) => theme.colors.primary};
     }
 
     &.disabled {
@@ -55,7 +55,7 @@ export const RadioButton = styled.div`
     }
 
     &.disabled + label:before {
-      border: 1.6px solid ${({ theme }) => theme.colors.neutralMediumDark};
+      border: 1px solid ${({ theme }) => theme.colors.neutralMediumDark};
       pointer-events: none;
     }
 
@@ -63,11 +63,11 @@ export const RadioButton = styled.div`
       content: "";
       position: absolute;
       left: 2px;
-      top: 3.5px;
+      top: 3.4px;
       background: ${({ theme }) => theme.colors.primary};
       width: 16px;
       height: 16px;
-      border-radius: 50px;
+      border-radius: 100px;
       
       
   }

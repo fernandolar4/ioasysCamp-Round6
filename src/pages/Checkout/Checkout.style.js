@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const Checkout = styled.main`
   padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .checkoutName {
     display: flex;
     align-items: flex-start;
+    margin-right: auto;
     margin-bottom: 32px;
 
     a {
@@ -39,7 +43,16 @@ export const Checkout = styled.main`
       border: 2px solid ${({ theme }) => theme.colors.primaryLight};
     }
   }
-
+  .formViajante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
   .checkoutTotal {
     margin-bottom: 32px;
 
@@ -83,10 +96,14 @@ export const Checkout = styled.main`
   }
 
   .linha {
+    margin-top: 32px;
     margin-bottom: 32px;
 
     height: 1px;
     width: 80vw;
     background-color: ${({ theme }) => theme.colors.neutralMediumLight};
+  }
+  .btnSend {
+    margin-top: 32px;
   }
 `;

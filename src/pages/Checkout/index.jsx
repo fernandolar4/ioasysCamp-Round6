@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
-import Viajante from "../../components/Viajante";
+
 import RadioButton from "../../components/RadioButton";
 import Form from "../../components/Form";
 import Button from "../../components/Button";
@@ -35,8 +35,25 @@ const Checkout = () => {
             <p>Em até 3x sem juros no cartão de crédito</p>
           </div>
         </div>
-        <Viajante />
-        <div className="linha"></div>
+        <section className="formViajante">
+          <h3>Viajante X</h3>
+          <Form type="text" placeholder="Maria Fernanda">
+            Nome
+          </Form>
+          <Form type="text" placeholder="Sales Souza">
+            Sobrenome
+          </Form>
+          <Form type="date" placeholder="01/01/1999">
+            Data de nascimento
+          </Form>
+          <Form type="email" placeholder="example@email.com">
+            E-mail
+          </Form>
+          <Form type="number" placeholder="000.000.000-00">
+            CPF
+          </Form>
+          <div className="linha"></div>
+        </section>
         <h2>Pagamento</h2>
         <div className="checkoutRadio">
           <RadioButton name="checkout">Boleto</RadioButton>
@@ -70,7 +87,7 @@ const Checkout = () => {
           </div>
         </form>
 
-        <div onClick={handleShow}>
+        <div onClick={handleShow} className="btnSend">
           <Button onClick={handleShow}>Finalizar compra</Button>
         </div>
 
