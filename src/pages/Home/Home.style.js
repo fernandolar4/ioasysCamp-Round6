@@ -166,7 +166,7 @@ export const App = styled.section`
   @media (min-width: 768px) {
     flex-direction: row-reverse;
     img {
-      margin-left: 20;
+      margin-left: 20%;
     }
   }
   .appParte1 {
