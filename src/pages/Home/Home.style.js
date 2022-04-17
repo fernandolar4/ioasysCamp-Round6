@@ -3,10 +3,12 @@ import bg from "../../assets/Background.png";
 import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const containerHome = styled.main`
-  overflow-x: hidden;
-  background-image: url(${bgD});
-  background-position: 1%;
-  background-repeat: repeat-y;
+  @media (min-width: 768px) {
+    overflow-x: hidden;
+    background-image: url(${bgD});
+    background-position: 1%;
+    background-repeat: repeat-y;
+  }
 `;
 
 export const Subtitulo = styled.h2`
