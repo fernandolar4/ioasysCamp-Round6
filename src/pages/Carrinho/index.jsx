@@ -9,14 +9,20 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Carrinho = () => {
-  const [viagem, setViagem] = useState([]);
-  const [pessoas, setPessoas] = useState([]);
+  const [viagem, setViagem] = useState({
+    tourName: "Nenhuma viagem",
+    price: 0,
+    description: "Nenhuma viagem",
+  });
+  const [pessoas, setPessoas] = useState(["0"]);
 
   const location = useLocation();
 
   useEffect(() => {
-    setViagem(location.state.viagem.viagemDesc);
-    setPessoas(location.state.viajantes.viajantes);
+    if (location.state !== null) {
+      setViagem(location.state.viagem.viagemDesc);
+      setPessoas(location.state.viajantes.viajantes);
+    }
   }, []);
 
   function minusPessoa() {
@@ -42,7 +48,7 @@ const Carrinho = () => {
             <div className="carrinhoNome">
               <div className="carrinhoTitulo">
                 <img src={Camping} alt="Icone" />
-                <p>{viagem.tourName}</p>
+                <p> {viagem.tourName}</p>
               </div>
               <p>R$ {viagem.price * pessoas}</p>
             </div>
@@ -113,7 +119,12 @@ const Carrinho = () => {
           </section>
         </section>
         <Button className="secondary btnPosition">
-          <Link to="/checkout">Finalizar compra</Link>
+          <Link
+            to="/checkout"
+            state={{ viagem: { viagem }, pessoas: { pessoas } }}
+          >
+            Finalizar compra
+          </Link>
         </Button>
       </S.Carrinho>
       <Footer />

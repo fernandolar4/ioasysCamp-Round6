@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 
@@ -10,9 +10,22 @@ import Arrow from "../../assets/icons/Arrow.svg";
 
 import * as S from "./Checkout.style";
 import { Modal } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Checkout = () => {
+  const [viagem, setViagem] = useState([]);
+  const [pessoas, setPessoas] = useState(["0"]);
+  const [arrayPessoas, setArrayPessoas] = useState([]);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state !== null) {
+      setViagem(location.state.viagem.viagem);
+      setPessoas(location.state.pessoas.pessoas);
+      setArrayPessoas(Array.from(Array(location.state.pessoas.pessoas).keys()));
+    }
+  }, []);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -31,29 +44,32 @@ const Checkout = () => {
         <div className="checkoutTotal">
           <h3>Total a pagar</h3>
           <div>
-            <h3>R$ XXX,XX</h3>
+            <h3>R$ {viagem.price * pessoas}</h3>
             <p>Em até 3x sem juros no cartão de crédito</p>
           </div>
         </div>
-        <section className="formViajante">
-          <h3>Viajante X</h3>
-          <Form type="text" placeholder="Maria Fernanda">
-            Nome
-          </Form>
-          <Form type="text" placeholder="Sales Souza">
-            Sobrenome
-          </Form>
-          <Form type="date" placeholder="01/01/1999">
-            Data de nascimento
-          </Form>
-          <Form type="email" placeholder="example@email.com">
-            E-mail
-          </Form>
-          <Form type="number" placeholder="000.000.000-00">
-            CPF
-          </Form>
-          <div className="linha"></div>
-        </section>
+        {arrayPessoas.map((e, index) => (
+          <section className="formViajante">
+            <h3>Viajante {index + 1}</h3>
+            <Form type="text" placeholder="Maria Fernanda">
+              Nome
+            </Form>
+            <Form type="text" placeholder="Sales Souza">
+              Sobrenome
+            </Form>
+            <Form type="date" placeholder="01/01/1999">
+              Data de nascimento
+            </Form>
+            <Form type="email" placeholder="example@email.com">
+              E-mail
+            </Form>
+            <Form type="number" placeholder="000.000.000-00">
+              CPF
+            </Form>
+            <div className="linha"></div>
+          </section>
+        ))}
+
         <h2>Pagamento</h2>
         <div className="checkoutRadio">
           <RadioButton name="checkout">Boleto</RadioButton>
@@ -100,7 +116,7 @@ const Checkout = () => {
             <div className="checkoutTotal">
               <p>Total a pagar</p>
               <div>
-                <p>R$ XXX,XX</p>
+                <p>R$ {viagem.price * pessoas}</p>
                 <p>Em até 3x sem juros no cartão de crédito</p>
               </div>
             </div>
