@@ -84,8 +84,8 @@ export const Dicas = styled.section`
     display: flex;
     flex-direction: row;
     .barraV {
-      width: 1px;
-      height: 64px;
+      width: 2px;
+      min-height: 90%;
       background-color: ${({ theme }) => theme.colors.neutralMediumLight};
       margin-left: 10px;
       margin-right: 23px;

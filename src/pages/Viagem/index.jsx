@@ -5,29 +5,48 @@ import * as S from "./Viagem.style";
 import Mock from "../../mock/pacotes.json";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Calendar from "../../assets/icons/Calendar.svg";
 import Camping from "../../assets/icons/Camping.svg";
 import Mountain from "../../assets/icons/Mountain.svg";
 import Mapa from "../../assets/icons/Map.svg";
+import { useEffect, useState } from "react";
+import api from "../../services/api";
 
 const Viagem = () => {
+  const [viagemDesc, setViagemDesc] = useState([]);
+  const location = useLocation();
+  const viagemID = location.state;
+
+  useEffect(() => {
+    api
+      .get(`/tours/${viagemID}`)
+      .then((response) => setViagemDesc(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro " + err);
+      });
+  }, []);
+
   return (
     <>
+      {console.log(viagemDesc)}
       <NavBar />
       <S.Viagem>
         <S.Info>
           <h5 className="breadcrumb">
             <Link to="/">Início</Link>/<Link to="/">Pacotes de turimo</Link>/
-            {Mock.pacotes[1].nome}
+            {viagemDesc.tourName}
           </h5>
-          <img src={Mock.pacotes[1].foto} alt="Foto do local" />
+          <img src={viagemDesc.photo1} alt="Foto do local" />
           <div className="nomeValor">
-            <span>{Mock.pacotes[1].nome}</span>
-            <span>R${Mock.pacotes[1].valor}</span>
+            <span>{viagemDesc.tourName}</span>
+            <span>R$ {viagemDesc.price}</span>
           </div>
-          <p className="descricao">{Mock.pacotes[1].descricao}</p>
-          <p className="vagas">X vagas ainda disponíveis</p>
+          <p className="descricao">{viagemDesc.description}</p>
+          <p className="vagas">
+            {viagemDesc.vacancies} vagas ainda disponíveis
+          </p>
           <div className="pessoas">
             <p>Quantidade de pessoas</p>
             <span>0</span>
@@ -45,11 +64,7 @@ const Viagem = () => {
           </div>
           <div className="containerDicas">
             <div className="barraV" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
-            </p>
+            <p>{viagemDesc.accommodation}</p>
           </div>
           <div className="iconName">
             <img src={Mountain} alt="Icone" />
@@ -57,11 +72,7 @@ const Viagem = () => {
           </div>
           <div className="containerDicas">
             <div className="barraV" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
-            </p>
+            <p>{viagemDesc.activities}</p>
           </div>
           <div className="iconName">
             <img src={Calendar} alt="Icone" />
@@ -69,11 +80,7 @@ const Viagem = () => {
           </div>
           <div className="containerDicas">
             <div className="barraV" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
-            </p>
+            <p>{viagemDesc.travelDate}</p>
           </div>
           <div className="iconName">
             <img src={Mapa} alt="Icone" />
@@ -81,11 +88,7 @@ const Viagem = () => {
           </div>
           <div className="containerDicas">
             <div className="barraV" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor
-            </p>
+            <p>{viagemDesc.hint}</p>
           </div>
         </S.Dicas>
       </S.Viagem>

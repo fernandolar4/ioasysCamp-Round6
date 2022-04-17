@@ -28,7 +28,7 @@ const Pacotes = () => {
         <h2>Pacotes de Turismo</h2>
         <section>
           {pacotes.map((pacote, index) => (
-            <Link to="/viagem" key={pacote.id}>
+            <Link to="/viagem" key={pacote.id} state={pacote.id}>
               <div className={alternatingclass[index % 2]}></div>
               <div className="containerFoto">
                 <img src={pacote.photo1} alt="foto da localidade" />
