@@ -2,12 +2,12 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import Button from "../../components/Button";
 import * as S from "./Pacotes.style";
+import api from "../../services/api";
 
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import Mock from "../../mock/pacotes.json";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
 const Pacotes = () => {
   const alternatingclass = ["containerBg", "containerBgB"];
@@ -15,16 +15,13 @@ const Pacotes = () => {
   const [pacotes, setPacotes] = useState([]);
 
   useEffect(() => {
-    handlePacotes();
+    api
+      .get("tours")
+      .then((response) => setPacotes(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
   }, []);
-
-  async function handlePacotes() {
-    const data = await axios({
-      url: `https://cobe-backend.herokuapp.com/api/tours`,
-    });
-    setPacotes([data]);
-    console.log(pacotes);
-  }
 
   return (
     <>
