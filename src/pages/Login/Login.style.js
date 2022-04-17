@@ -5,7 +5,6 @@ export const loginScreen = styled.main`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
   padding: 40px 32px 0px;
   .containerBgB {
     position: absolute;
@@ -18,8 +17,10 @@ export const loginScreen = styled.main`
 
   article {
     text-align: left;
-    max-width: 300px;
+    width: 290px;
+    margin: 0 auto;
     h2 {
+      margin-right: auto;
       font-style: normal;
       font-weight: 400;
       font-size: 24px;

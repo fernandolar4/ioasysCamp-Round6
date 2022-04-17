@@ -82,7 +82,7 @@ const NavBar = () => {
               <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav className="justify-content-end flex-grow-1 pe-1">
                 <S.NavStyles>
                   <Nav.Link id="linksOffscreen" className="teste" href="/sobre">
                     Sobre nós

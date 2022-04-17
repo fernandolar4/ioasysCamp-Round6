@@ -7,15 +7,17 @@ export const cadastro = styled.main`
   display: flex;
   flex-direction: column;
 
- 
-  .containerBgB {
-    position: absolute;
-    margin-top: 0px;
-    right: 0px;
-    background-image: url(${pattern});
-    height: 40px;
-    width: 55%;
-  }
+  
+
+    .containerBgB {
+      position: absolute;
+      margin-top: 0px;
+      right: 0px;
+      background-image: url(${pattern});
+      height: 40px;
+      width: 55%;
+    }
+    
     h2 {
       align-items: flex-start;
       margin-right: auto;
@@ -87,4 +89,8 @@ export const cadastro = styled.main`
       }
     }
   }
+  article {
+    text-align: left;
+    width: 290px;
+    margin: 0 auto;
 `;
