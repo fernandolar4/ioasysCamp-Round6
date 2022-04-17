@@ -91,10 +91,10 @@ const NavBar = () => {
                     Pacotes turísticos
                   </Nav.Link>
                   <Nav.Link id="linksOffscreen" href="/login">
-                    login
+                    Login
                   </Nav.Link>
                   <Nav.Link id="linksOffscreen" href="/cadastro">
-                    cadastro
+                    Cadastro
                   </Nav.Link>
                 </S.NavStyles>
               </Nav>

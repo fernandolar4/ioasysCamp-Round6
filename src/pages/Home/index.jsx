@@ -43,7 +43,7 @@ const Home = () => {
               </div>
               <div className="containerParceiras">
                 <div className="barraV" />
-                <p>
+                <p className="textoParceira">
                   Fique hospedado na casa de um anfitrião morador local. Você
                   poderá participar de momentos únicos no dia a dia da
                   comunidade
@@ -57,7 +57,7 @@ const Home = () => {
               </div>
               <div className="containerParceiras">
                 <div className="barraV" />
-                <p>
+                <p className="textoParceira">
                   Um dia de pesca, plantio da lavoura ou criar peças de
                   artesanato: participe das atividades que fazem parte da vida
                   da comunidade
@@ -71,7 +71,7 @@ const Home = () => {
               </div>
               <div className="containerParceiras">
                 <div className="barraV" />
-                <p>
+                <p className="textoParceira">
                   Através das nossas viagens você ajuda fomentando o comércio
                   local e trazendo maior visibilidade para o trabalho das
                   comunidades

@@ -226,23 +226,31 @@ export const App = styled.section`
 export const Parceiras = styled.section`
   margin-bottom: 11px;
   @media (min-width: 768px) {
+    margin-bottom: 160px;
+
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
   }
   .iconName {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+
     @media (min-width: 768px) {
       flex-direction: column;
-      justify-content: space-around;
-      img {
+      justify-content: space-between;
+    }
+
+    img {
+      margin-right: 12px;
+      @media (min-width: 768px) {
+        margin-right: 0px;
         height: 90px;
         margin-bottom: 56px;
       }
-    }
-    img {
-      margin-right: 12px;
     }
     p {
       font-size: 18px;
@@ -259,6 +267,9 @@ export const Parceiras = styled.section`
   .containerParceiras {
     display: flex;
     flex-direction: row;
+    @media (min-width: 768px) {
+      justify-content: space-between;
+    }
     .barraV {
       width: 1px;
       height: 64px;
@@ -267,14 +278,17 @@ export const Parceiras = styled.section`
       margin-right: 23px;
       margin-bottom: 19px;
       @media (min-width: 768px) {
-        background-color: transparent;
+        display: none;
         margin-bottom: 160px;
       }
     }
-    p {
+    .textoParceira {
       font-size: 12px;
       font-weight: 400;
       color: ${({ theme }) => theme.colors.neutralDark};
+      @media (min-width: 768px) {
+        max-width: 300px;
+      }
     }
   }
 `;
