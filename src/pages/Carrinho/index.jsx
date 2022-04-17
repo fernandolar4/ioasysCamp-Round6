@@ -36,6 +36,13 @@ const Carrinho = () => {
     }
   }
 
+  function alternatingclass() {
+    if (pessoas === 0) return "disabled";
+    else {
+      return "secondary";
+    }
+  }
+
   return (
     <>
       {console.log(viagem)}
@@ -118,14 +125,16 @@ const Carrinho = () => {
             </div>
           </section>
         </section>
-        <Button className="secondary btnPosition">
-          <Link
-            to="/checkout"
-            state={{ viagem: { viagem }, pessoas: { pessoas } }}
-          >
-            Finalizar compra
-          </Link>
-        </Button>
+        <div className="btnPosition">
+          <Button className={alternatingclass()}>
+            <Link
+              to="/checkout"
+              state={{ viagem: { viagem }, pessoas: { pessoas } }}
+            >
+              Finalizar compra
+            </Link>
+          </Button>
+        </div>
       </S.Carrinho>
       <Footer />
     </>
