@@ -7,8 +7,6 @@ import api from "../../services/api";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import Mock from "../../mock/pacotes.json";
-
 const Pacotes = () => {
   const alternatingclass = ["containerBg", "containerBgB"];
 
@@ -16,10 +14,10 @@ const Pacotes = () => {
 
   useEffect(() => {
     api
-      .get("tours")
+      .get("/tours")
       .then((response) => setPacotes(response.data))
       .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
+        console.error("ops! ocorreu um erro " + err);
       });
   }, []);
 
@@ -27,17 +25,16 @@ const Pacotes = () => {
     <>
       <NavBar />
       <S.Pacotes>
-        {console.log(pacotes)}
+        <h2>Pacotes de Turismo</h2>
         <section>
-          {Mock.pacotes.map((pacote, index) => (
-            <Link to="/viagem">
-              <h2>Pacotes de Turismo</h2>
+          {pacotes.map((pacote, index) => (
+            <Link to="/viagem" key={pacote.id}>
               <div className={alternatingclass[index % 2]}></div>
               <div className="containerFoto">
-                <img src={pacote.foto} alt="foto da localidade" />
+                <img src={pacote.photo1} alt="foto da localidade" />
                 <div className="containerTexto">
-                  <p>{pacote.nome}</p>
-                  <p>R${pacote.valor}</p>
+                  <p>{pacote.tourName}</p>
+                  <p>R${pacote.price}</p>
                 </div>
               </div>
               <div className="containerBtn ">
