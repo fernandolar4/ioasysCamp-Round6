@@ -67,6 +67,11 @@ export const Info = styled.section`
         background-color: transparent;
         margin-right: 10px;
         margin-left: 10px;
+        :hover {
+          svg {
+            fill: ${({ theme }) => theme.colors.primary};
+          }
+        }
       }
     }
   }
