@@ -37,7 +37,7 @@ const Carrinho = () => {
   }
 
   function alternatingclass() {
-    if (pessoas == 0) return "disabled";
+    if (pessoas === 0) return "disabled";
     else {
       return "secondary";
     }
@@ -45,7 +45,6 @@ const Carrinho = () => {
 
   return (
     <>
-      {console.log(viagem)}
       <NavBar />
       <S.Carrinho>
         <section>
