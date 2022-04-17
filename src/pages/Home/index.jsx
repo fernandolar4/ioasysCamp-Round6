@@ -113,7 +113,7 @@ const Home = () => {
             </S.Comunidade>
           </div>
           <Button className="">
-            <Link to="/sobre#proposito">Saiba mais sobre nosso projeto</Link>
+            <Link to="/sobre#proposito">Conhecer projeto</Link>
           </Button>
         </S.Comunidades>
         <S.Barra />

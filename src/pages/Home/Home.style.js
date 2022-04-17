@@ -101,6 +101,8 @@ export const Comunidades = styled.main`
   width: 100%;
   margin-bottom: 76px;
   @media (min-width: 768px) {
+    margin-bottom: 120px;
+
     div {
       width: 100vw;
 
@@ -220,6 +222,9 @@ export const App = styled.section`
   }
   img {
     margin-bottom: 53px;
+    @media (min-width: 768px) {
+      margin-top: 120px;
+    }
   }
 `;
 
@@ -299,4 +304,7 @@ export const Barra = styled.div`
   align-items: center;
   margin: 0px auto 54px;
   background-color: ${({ theme }) => theme.colors.neutralMediumLight};
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
