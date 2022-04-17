@@ -54,6 +54,26 @@ export const Carrinho = styled.main`
     }
     .carrinhoPessoas {
       font-size: 14px;
+      display: flex;
+      align-items: flex-start;
+      span {
+        margin-left: 10px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        button {
+          background-color: transparent;
+
+          margin-left: 10px;
+          :hover {
+            svg {
+              fill: ${({ theme }) => theme.colors.primary};
+            }
+          }
+        }
+      }
     }
     .carrinhoDesc {
       font-size: 14px;

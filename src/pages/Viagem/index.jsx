@@ -17,7 +17,6 @@ const Viagem = () => {
   const [viagemDesc, setViagemDesc] = useState([]);
   const location = useLocation();
   const viagemID = location.state;
-
   const [viajantes, setViajantes] = useState(0);
 
   useEffect(() => {
@@ -77,9 +76,9 @@ const Viagem = () => {
                   <path
                     d="M6.42773 10H13.0604"
                     stroke="#252A27"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -100,16 +99,16 @@ const Viagem = () => {
                   <path
                     d="M10.2852 6.70312V13.3358"
                     stroke="#252A27"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M6.96875 10H13.6014"
                     stroke="#252A27"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -118,7 +117,12 @@ const Viagem = () => {
         </S.Info>
         <div className="containerBtn">
           <Button className="">
-            <Link to="/carrinho">Comprar Pacote</Link>
+            <Link
+              to="/carrinho"
+              state={{ viagem: { viagemDesc }, viajantes: { viajantes } }}
+            >
+              Comprar Pacote
+            </Link>
           </Button>
         </div>
         <S.Dicas>
