@@ -2,7 +2,6 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import * as S from "./Viagem.style";
 
-import Mock from "../../mock/pacotes.json";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -19,6 +18,8 @@ const Viagem = () => {
   const location = useLocation();
   const viagemID = location.state;
 
+  const [viajantes, setViajantes] = useState(0);
+
   useEffect(() => {
     api
       .get(`/tours/${viagemID}`)
@@ -28,9 +29,19 @@ const Viagem = () => {
       });
   }, []);
 
+  function minusViajante() {
+    if (viajantes > 0) {
+      setViajantes(viajantes - 1);
+    }
+  }
+  function plusViajante() {
+    if (viajantes < viagemDesc.vacancies) {
+      setViajantes(viajantes + 1);
+    }
+  }
+
   return (
     <>
-      {console.log(viagemDesc)}
       <NavBar />
       <S.Viagem>
         <S.Info>
@@ -49,7 +60,60 @@ const Viagem = () => {
           </p>
           <div className="pessoas">
             <p>Quantidade de pessoas</p>
-            <span>0</span>
+            <div>
+              <button
+                onClick={(e) => {
+                  minusViajante();
+                }}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10" cy="10" r="9.5" stroke="#252A27" />
+                  <path
+                    d="M6.42773 10H13.0604"
+                    stroke="#252A27"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <span>{viajantes}</span>
+              <button
+                onClick={(event) => {
+                  plusViajante();
+                }}
+              >
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10.2852" cy="10" r="9.5" stroke="#252A27" />
+                  <path
+                    d="M10.2852 6.70312V13.3358"
+                    stroke="#252A27"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.96875 10H13.6014"
+                    stroke="#252A27"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </S.Info>
         <div className="containerBtn">

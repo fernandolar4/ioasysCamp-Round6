@@ -57,9 +57,18 @@ export const Info = styled.section`
   }
   .pessoas {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 24px;
+    div {
+      display: flex;
+      align-items: center;
+      button {
+        background-color: transparent;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
   }
 `;
 
@@ -84,7 +93,7 @@ export const Dicas = styled.section`
     display: flex;
     flex-direction: row;
     .barraV {
-      width: 2px;
+      width: 1px;
       min-height: 90%;
       background-color: ${({ theme }) => theme.colors.neutralMediumLight};
       margin-left: 10px;
