@@ -7,8 +7,7 @@ import Conta from "./pages/Conta";
 import Contato from "./pages/Contato";
 import FAQ from "./pages/FAQ";
 import Home from "./pages/Home";
-import InfoPagamento from "./pages/InfoPagamento";
-import InfoPessoal from "./pages/InfoPessoal";
+
 import Login from "./pages/Login";
 import Pacotes from "./pages/Pacotes";
 import Resumo from "./pages/Resumo";
@@ -27,8 +26,7 @@ const Routes = () => {
       <Route path="/conta" exact element={<Conta />} />
       <Route path="/contato" exact element={<Contato />} />
       <Route path="/faq" exact element={<FAQ />} />
-      <Route path="/infopessoal" exact element={<InfoPessoal />} />
-      <Route path="/infopagamento" exact element={<InfoPagamento />} />
+
       <Route path="/login" exact element={<Login />} />
       <Route path="/pacotes" exact element={<Pacotes />} />
       <Route path="/resumo" exact element={<Resumo />} />

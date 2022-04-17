@@ -8,6 +8,7 @@ const Form = (props) => {
         {props.children}
       </label>
       <input
+        required
         className={props.className}
         id={props.children + RNG}
         name={props.name}

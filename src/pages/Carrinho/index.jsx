@@ -14,7 +14,7 @@ const Carrinho = () => {
     price: 0,
     description: "Nenhuma viagem",
   });
-  const [pessoas, setPessoas] = useState(["0"]);
+  const [pessoas, setPessoas] = useState(0);
 
   const location = useLocation();
 
@@ -37,7 +37,7 @@ const Carrinho = () => {
   }
 
   function alternatingclass() {
-    if (pessoas === 0) return "disabled";
+    if (pessoas == 0) return "disabled";
     else {
       return "secondary";
     }
