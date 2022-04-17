@@ -7,6 +7,8 @@ import Form from "../../components/Form";
 import Button from "../../components/Button";
 
 import Arrow from "../../assets/icons/Arrow.svg";
+import Camping from "../../assets/icons/Camping.svg";
+import Card from "../../assets/icons/Card.svg";
 
 import * as S from "./Checkout.style";
 import { Modal } from "react-bootstrap";
@@ -33,6 +35,7 @@ const Checkout = () => {
 
   return (
     <>
+      {console.log(viagem)}
       <NavBar />
       <S.Checkout>
         <div className="checkoutName">
@@ -111,17 +114,39 @@ const Checkout = () => {
           <Modal.Header closeButton>
             <Modal.Title>Resumo da compra</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            Woohoo, you're reading this text in a modal!
-            <div className="checkoutTotal">
-              <p>Total a pagar</p>
-              <div>
-                <p>R$ {viagem.price * pessoas}</p>
-                <p>Em até 3x sem juros no cartão de crédito</p>
+          <Modal.Body className="modalBody">
+            <S.containerModal>
+              <div className="iconName">
+                <img src={Camping} alt="Icone" />
+                <p>{viagem.tourName}</p>
               </div>
-            </div>
+              <div className="containerDicas">
+                <div className="barraV" />
+                <p>{viagem.accommodation}</p>
+              </div>
+              <div className="iconName">
+                <img src={Card} alt="Icone" />
+                <p>Forma de pagamento</p>
+              </div>
+              <div className="containerDicas">
+                <div className="barraV" />
+                <article>
+                  <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                  <p>
+                    <span>Alterar forma de pagamento</span>
+                  </p>
+                </article>
+              </div>
+            </S.containerModal>
           </Modal.Body>
           <Modal.Footer>
+            <S.totalFooterModal>
+              <h3>Total a pagar</h3>
+              <div>
+                <h3>R$ {viagem.price * pessoas}</h3>
+                <p>Em até 3x sem juros no cartão de crédito</p>
+              </div>
+            </S.totalFooterModal>
             <Button className="secondary">
               <Link to="/resumo">Confirmar compra</Link>
             </Button>

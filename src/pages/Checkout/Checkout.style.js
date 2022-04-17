@@ -107,3 +107,68 @@ export const Checkout = styled.main`
     margin-top: 32px;
   }
 `;
+
+export const containerModal = styled.div`
+  margin-top: 30px;
+
+  .iconName {
+    display: flex;
+    align-items: flex-start;
+    img {
+      height: 20px;
+      margin-right: 12px;
+      margin-top: 3px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.neutralDarker};
+    }
+  }
+
+  .containerDicas {
+    display: flex;
+    flex-direction: row;
+    .barraV {
+      width: 1px;
+      min-height: 90%;
+      background-color: ${({ theme }) => theme.colors.neutralMediumLight};
+      margin-left: 10px;
+      margin-right: 23px;
+      margin-bottom: 19px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: ${({ theme }) => theme.colors.neutralDark};
+      span {
+        font-weight: 600;
+        color: ${({ theme }) => theme.colors.primary};
+        :hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+`;
+
+export const totalFooterModal = styled.div`
+width: 100%;
+margin-bottom: 32px;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+text-align: right;
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  white-space: nowrap;
+}
+p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+}
+`;

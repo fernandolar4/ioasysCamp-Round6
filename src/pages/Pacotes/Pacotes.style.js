@@ -1,8 +1,16 @@
 import styled from "styled-components";
 import pattern from "../../assets/pattern/pattern.svg";
+import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const Pacotes = styled.section`
   padding: 35px 32px 20px;
+  @media (min-width: 768px) {
+    padding: 90px 112px 400px;
+    overflow-x: hidden;
+    background-image: url(${bgD});
+    background-position: 1%;
+    background-repeat: repeat-y;
+  }
 
   h2 {
     display: block;
@@ -10,7 +18,18 @@ export const Pacotes = styled.section`
     color: ${({ theme }) => theme.colors.neutralDarker};
     font-weight: 600;
     margin-bottom: 42px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
   }
+
+  .containerPacote {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
   section {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +43,9 @@ export const Pacotes = styled.section`
       background-image: url(${pattern});
       height: 80px;
       width: 85%;
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
     .containerBgB {
       position: absolute;
@@ -32,6 +54,9 @@ export const Pacotes = styled.section`
       background-image: url(${pattern});
       height: 80px;
       width: 85%;
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
     a {
@@ -51,16 +76,28 @@ export const Pacotes = styled.section`
           border-radius: 15px;
 
           filter: drop-shadow(0px 2px 20px rgb(37 42 39 / 0.2));
+          @media (min-width: 768px) {
+            margin-bottom: 80px;
+
+            width: 332px;
+            height: 310px;
+          }
         }
         .containerTexto {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
           p {
             color: ${({ theme }) => theme.colors.neutralDarker};
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 20px;
+            @media (min-width: 768px) {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 120%;
+            }
           }
         }
       }

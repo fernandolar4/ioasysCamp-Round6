@@ -26,7 +26,7 @@ const Pacotes = () => {
       <NavBar />
       <S.Pacotes>
         <h2>Pacotes de Turismo</h2>
-        <section>
+        <section className="containerPacote">
           {pacotes.map((pacote, index) => (
             <Link to="/viagem" key={pacote.id} state={pacote.id}>
               <div className={alternatingclass[index % 2]}></div>
