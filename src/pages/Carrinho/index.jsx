@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar";
 import Button from "../../components/Button";
 import Camping from "../../assets/icons/Camping.svg";
 import Lixo from "../../assets/icons/Lixo.svg";
+import placeholder from "../../assets/placeholder.png";
 
 import * as S from "./Carrinho.style";
 import { Link, useLocation } from "react-router-dom";
@@ -52,7 +53,7 @@ const Carrinho = () => {
           <h2>Carrinho de compras</h2>
           <section className="carrinhoCard">
             <img
-              src={viagem.photo1}
+              src={viagem.photo1 || placeholder}
               alt={viagem.description}
               className="imgPacote"
             ></img>

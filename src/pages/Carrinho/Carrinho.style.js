@@ -57,7 +57,7 @@ export const Carrinho = styled.main`
       display: none;
       @media (min-width: 768px) {
         display: block;
-        width: 216px;
+        min-width: 216px;
         height: 216px;
         box-shadow: 0px 2px 35px rgba(37, 42, 39, 0.1);
         border-radius: 20px;
