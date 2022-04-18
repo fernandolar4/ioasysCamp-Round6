@@ -96,6 +96,8 @@ export const Pacotes = styled.section`
             @media (min-width: 768px) {
               font-weight: 600;
               font-size: 24px;
+              height: 50px;
+              max-width: 230px;
               line-height: 120%;
             }
           }

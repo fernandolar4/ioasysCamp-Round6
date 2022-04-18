@@ -43,122 +43,126 @@ const Viagem = () => {
     <>
       <NavBar />
       <S.Viagem>
-        <S.Info>
+        <S.LadoA>
           <h5 className="breadcrumb">
-            <Link to="/">Início</Link>/<Link to="/">Pacotes de turimo</Link>/
-            {viagemDesc.tourName}
+            <Link to="/">Início</Link>/
+            <Link to="/pacotes">Pacotes de turimo</Link>/{viagemDesc.tourName}
           </h5>
           <img src={viagemDesc.photo1} alt="Foto do local" />
-          <div className="nomeValor">
-            <span>{viagemDesc.tourName}</span>
-            <span>R$ {viagemDesc.price}</span>
-          </div>
-          <p className="descricao">{viagemDesc.description}</p>
-          <p className="vagas">
-            {viagemDesc.vacancies} vagas ainda disponíveis
-          </p>
-          <div className="pessoas">
-            <p>Quantidade de pessoas</p>
-            <div>
-              <button
-                onClick={(e) => {
-                  minusViajante();
-                }}
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="10" cy="10" r="9.5" stroke="#252A27" />
-                  <path
-                    d="M6.42773 10H13.0604"
-                    stroke="#252A27"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-              <span>{viajantes}</span>
-              <button
-                onClick={(event) => {
-                  plusViajante();
-                }}
-              >
-                <svg
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="10.2852" cy="10" r="9.5" stroke="#252A27" />
-                  <path
-                    d="M10.2852 6.70312V13.3358"
-                    stroke="#252A27"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M6.96875 10H13.6014"
-                    stroke="#252A27"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+        </S.LadoA>
+        <S.LadoB>
+          <S.Info>
+            <div className="nomeValor">
+              <span>{viagemDesc.tourName}</span>
+              <span>R$ {viagemDesc.price}</span>
             </div>
+            <p className="descricao">{viagemDesc.description}</p>
+            <p className="vagas">
+              {viagemDesc.vacancies} vagas ainda disponíveis
+            </p>
+            <div className="pessoas">
+              <p>Quantidade de pessoas</p>
+              <div>
+                <button
+                  onClick={(e) => {
+                    minusViajante();
+                  }}
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10" cy="10" r="9.5" stroke="#252A27" />
+                    <path
+                      d="M6.42773 10H13.0604"
+                      stroke="#252A27"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span>{viajantes}</span>
+                <button
+                  onClick={(event) => {
+                    plusViajante();
+                  }}
+                >
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="10.2852" cy="10" r="9.5" stroke="#252A27" />
+                    <path
+                      d="M10.2852 6.70312V13.3358"
+                      stroke="#252A27"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.96875 10H13.6014"
+                      stroke="#252A27"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </S.Info>
+          <div className="containerBtn">
+            <Button className="">
+              <Link
+                to="/carrinho"
+                state={{ viagem: { viagemDesc }, viajantes: { viajantes } }}
+              >
+                Comprar Pacote
+              </Link>
+            </Button>
           </div>
-        </S.Info>
-        <div className="containerBtn">
-          <Button className="">
-            <Link
-              to="/carrinho"
-              state={{ viagem: { viagemDesc }, viajantes: { viajantes } }}
-            >
-              Comprar Pacote
-            </Link>
-          </Button>
-        </div>
-        <S.Dicas>
-          <div className="iconName">
-            <img src={Camping} alt="Icone" />
-            <p>Hospedagem</p>
-          </div>
-          <div className="containerDicas">
-            <div className="barraV" />
-            <p>{viagemDesc.accommodation}</p>
-          </div>
-          <div className="iconName">
-            <img src={Mountain} alt="Icone" />
-            <p>Atividades</p>
-          </div>
-          <div className="containerDicas">
-            <div className="barraV" />
-            <p>{viagemDesc.activities}</p>
-          </div>
-          <div className="iconName">
-            <img src={Calendar} alt="Icone" />
-            <p>Datas</p>
-          </div>
-          <div className="containerDicas">
-            <div className="barraV" />
-            <p>{viagemDesc.travelDate}</p>
-          </div>
-          <div className="iconName">
-            <img src={Mapa} alt="Icone" />
-            <p>Dicas de viagem</p>
-          </div>
-          <div className="containerDicas">
-            <div className="barraV" />
-            <p>{viagemDesc.hint}</p>
-          </div>
-        </S.Dicas>
+          <S.Dicas>
+            <div className="iconName">
+              <img src={Camping} alt="Icone" />
+              <p>Hospedagem</p>
+            </div>
+            <div className="containerDicas">
+              <div className="barraV" />
+              <p>{viagemDesc.accommodation}</p>
+            </div>
+            <div className="iconName">
+              <img src={Mountain} alt="Icone" />
+              <p>Atividades</p>
+            </div>
+            <div className="containerDicas">
+              <div className="barraV" />
+              <p>{viagemDesc.activities}</p>
+            </div>
+            <div className="iconName">
+              <img src={Calendar} alt="Icone" />
+              <p>Datas</p>
+            </div>
+            <div className="containerDicas">
+              <div className="barraV" />
+              <p>{viagemDesc.travelDate}</p>
+            </div>
+            <div className="iconName">
+              <img src={Mapa} alt="Icone" />
+              <p>Dicas de viagem</p>
+            </div>
+            <div className="containerDicas">
+              <div className="barraV" />
+              <p>{viagemDesc.hint}</p>
+            </div>
+          </S.Dicas>
+        </S.LadoB>
       </S.Viagem>
       <Footer />
     </>
