@@ -60,7 +60,7 @@ export const Checkout = styled.main`
   .containerCompras {
     @media (min-width: 768px) {
       flex-direction: row;
-      margin: 72px auto;
+      margin: 72px 0px;
       width: 100vw;
       align-items: space-around;
     }
@@ -81,10 +81,13 @@ export const Checkout = styled.main`
   }
 
   .containerPagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     @media (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
       h2 {
+        margin-right: 170px;
         font-weight: 600;
         font-size: 24px;
       }
