@@ -1,15 +1,46 @@
 import styled from "styled-components";
+import bgD from "../../assets/pattern/backgroundDesktop.svg";
+import pattern from "../../assets/pattern/pattern.svg";
 
 export const Checkout = styled.main`
   padding: 40px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 768px) {
+    padding: 90px 110px;
+
+    overflow-x: hidden;
+    background-image: url(${bgD});
+    background-position: 1%;
+    background-repeat: repeat-y;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    width: 100%;
+  }
+  section {
+    @media (min-width: 768px) {
+      display: flex;
+      width: 100%;
+    }
+  }
   .checkoutName {
     display: flex;
     align-items: flex-start;
     margin-right: auto;
     margin-bottom: 32px;
+    @media (min-width: 768px) {
+      img {
+        height: 40px;
+        width: 40px;
+      }
+      a {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+      }
+    }
 
     a {
       margin-right: 10px;
@@ -19,6 +50,44 @@ export const Checkout = styled.main`
       font-weight: 600;
       font-size: 24px;
       line-height: 120%;
+      @media (min-width: 768px) {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+      }
+    }
+  }
+  .containerCompras {
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin: 72px auto;
+      width: 100vw;
+      align-items: space-around;
+    }
+  }
+  .containerViajantes {
+    @media (min-width: 768px) {
+      flex-direction: column;
+
+      h2 {
+        margin-right: 200px;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .formViajante {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .containerPagamento {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+      }
     }
   }
   label {
@@ -55,7 +124,9 @@ export const Checkout = styled.main`
   }
   .checkoutTotal {
     margin-bottom: 32px;
-
+    background-image: url(${pattern});
+    background-size: 60% auto;
+    background-repeat: repeat-x;
     background-color: ${({ theme }) => theme.colors.primary};
     box-shadow: 0px 2px 35px rgba(37, 42, 39, 0.1);
     border-radius: 20px;
@@ -66,16 +137,27 @@ export const Checkout = styled.main`
     justify-content: space-between;
     padding: 20px;
     text-align: right;
+    @media (min-width: 768px) {
+      padding: 25px;
+      width: 455.84px;
+      height: 120px;
+    }
     h3 {
       font-weight: 600;
       font-size: 18px;
       line-height: 120%;
       white-space: nowrap;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     p {
       font-weight: 400;
       font-size: 12px;
       line-height: 120%;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -102,6 +184,9 @@ export const Checkout = styled.main`
     height: 1px;
     width: 80vw;
     background-color: ${({ theme }) => theme.colors.neutralMediumLight};
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
   .btnSend {
     margin-top: 32px;

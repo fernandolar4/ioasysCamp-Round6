@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pattern from "../../assets/pattern/pattern.svg";
+import pattern from "../../assets/pattern/pattern.png";
 import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const Pacotes = styled.section`
