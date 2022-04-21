@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pattern from "../../assets/pattern/pattern.png";
+import pattern from "../../assets/pattern/pattern.svg";
 import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const Pacotes = styled.section`
@@ -43,6 +43,8 @@ export const Pacotes = styled.section`
       background-image: url(${pattern});
       height: 80px;
       width: 85%;
+      z-index: -1;
+
       @media (min-width: 768px) {
         display: none;
       }
@@ -54,6 +56,8 @@ export const Pacotes = styled.section`
       background-image: url(${pattern});
       height: 80px;
       width: 85%;
+      z-index: -1;
+
       @media (min-width: 768px) {
         display: none;
       }

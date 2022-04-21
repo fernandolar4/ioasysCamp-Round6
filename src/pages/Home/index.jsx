@@ -88,6 +88,8 @@ const Home = () => {
           <S.Subtitulo>Nosso propósito</S.Subtitulo>
           <div>
             <S.Comunidade>
+              <div className="containerBg"></div>
+
               <img src={img1} alt="Pacote" />
               <h3>Resgatar comunidades</h3>
               <p>
@@ -96,6 +98,8 @@ const Home = () => {
               </p>
             </S.Comunidade>
             <S.Comunidade>
+              <div className="containerBgB"></div>
+
               <img src={img2} alt="Pacote" />
               <h3>Proporcionar desenvolvimento</h3>
               <p>
@@ -104,6 +108,8 @@ const Home = () => {
               </p>
             </S.Comunidade>
             <S.Comunidade>
+              <div className="containerBg"></div>
+
               <img src={img3} alt="Pacote" />
               <h3>Gerar visibilidade</h3>
               <p>

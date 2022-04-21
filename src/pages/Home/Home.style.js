@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bg from "../../assets/Background.png";
+import pattern from "../../assets/pattern/pattern.svg";
 import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const containerHome = styled.main`
@@ -152,6 +153,31 @@ export const Comunidade = styled.div`
     margin-bottom: 48px;
     color: ${({ theme }) => theme.colors.neutralDark};
     text-align: center;
+  }
+
+  .containerBg {
+    position: absolute;
+    margin-top: -40px;
+    left: 0px;
+    background-image: url(${pattern});
+    height: 80px;
+    width: 70vw;
+    z-index: -1;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .containerBgB {
+    position: absolute;
+    margin-top: -40px;
+    right: 0px;
+    background-image: url(${pattern});
+    height: 80px;
+    width: 70vw;
+    z-index: -1;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 `;
 
