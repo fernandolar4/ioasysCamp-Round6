@@ -22,6 +22,9 @@ export const Form = styled.div`
     border: 1.6px solid ${({ theme }) => theme.colors.neutralMediumLight};
     padding-left: 10px;
     filter: drop-shadow(0px 2px 10px rgba(37, 42, 39, 0.1));
+    @media (min-width: 768px) {
+      width: 488px;
+    }
 
     ::placeholder {
       color: ${({ theme }) => theme.colors.NeutralMediumLight};
@@ -37,6 +40,9 @@ export const Form = styled.div`
     }
     &.small {
       width: 138px;
+      @media (min-width: 768px) {
+        width: 244px;
+      }
     }
   }
   .disabled {

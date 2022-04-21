@@ -293,6 +293,7 @@ export const Parceiras = styled.section`
       color: ${({ theme }) => theme.colors.neutralDark};
       @media (min-width: 768px) {
         max-width: 300px;
+        font-size: 14px;
       }
     }
   }

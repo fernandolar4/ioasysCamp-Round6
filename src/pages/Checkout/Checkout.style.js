@@ -7,7 +7,7 @@ export const Checkout = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     padding: 90px 110px;
 
     overflow-x: hidden;
@@ -15,12 +15,12 @@ export const Checkout = styled.main`
     background-position: 1%;
     background-repeat: repeat-y;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
     width: 100%;
   }
   section {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       display: flex;
       width: 100%;
     }
@@ -30,7 +30,7 @@ export const Checkout = styled.main`
     align-items: flex-start;
     margin-right: auto;
     margin-bottom: 32px;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       img {
         height: 40px;
         width: 40px;
@@ -50,7 +50,7 @@ export const Checkout = styled.main`
       font-weight: 600;
       font-size: 24px;
       line-height: 120%;
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         font-weight: 600;
         font-size: 40px;
         line-height: 120%;
@@ -58,7 +58,7 @@ export const Checkout = styled.main`
     }
   }
   .containerCompras {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       flex-direction: row;
       margin: 72px 0px;
       width: 100vw;
@@ -66,11 +66,11 @@ export const Checkout = styled.main`
     }
   }
   .containerViajantes {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       flex-direction: column;
 
       h2 {
-        margin-right: 200px;
+        margin-right: 390px;
         font-weight: 600;
         font-size: 24px;
       }
@@ -84,10 +84,10 @@ export const Checkout = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    @media (min-width: 768px) {
+
+    @media (min-width: 992px) {
       h2 {
-        margin-right: 170px;
+        margin-right: 350px;
         font-weight: 600;
         font-size: 24px;
       }
@@ -109,6 +109,9 @@ export const Checkout = styled.main`
     padding-left: 10px;
     filter: drop-shadow(0px 2px 10px rgba(37, 42, 39, 0.1));
     margin-bottom: 16px;
+    @media (min-width: 768px) {
+      width: 488px;
+    }
 
     :focus {
       outline: none;
@@ -140,7 +143,7 @@ export const Checkout = styled.main`
     justify-content: space-between;
     padding: 20px;
     text-align: right;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       padding: 25px;
       width: 455.84px;
       height: 120px;
@@ -150,7 +153,7 @@ export const Checkout = styled.main`
       font-size: 18px;
       line-height: 120%;
       white-space: nowrap;
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         font-size: 24px;
       }
     }
@@ -158,7 +161,7 @@ export const Checkout = styled.main`
       font-weight: 400;
       font-size: 12px;
       line-height: 120%;
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         font-size: 16px;
       }
     }
@@ -187,7 +190,7 @@ export const Checkout = styled.main`
     height: 1px;
     width: 80vw;
     background-color: ${({ theme }) => theme.colors.neutralMediumLight};
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       display: none;
     }
   }
