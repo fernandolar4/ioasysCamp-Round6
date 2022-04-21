@@ -90,6 +90,9 @@ const NavBar = () => {
                   <Nav.Link id="linksOffscreen" href="/pacotes">
                     Pacotes turísticos
                   </Nav.Link>
+                  <Nav.Link id="linksOffscreen" href="/contato">
+                    Contato
+                  </Nav.Link>
                   <Nav.Link id="linksOffscreen" href="/login">
                     Login
                   </Nav.Link>

@@ -30,6 +30,7 @@ const Contato = () => {
                 <label for="textarea">Mensagem</label>
                 <textarea
                   required
+                  rows="10"
                   id="textarea"
                   name="textarea"
                   placeholder="Digite aqui sua mensagem"
@@ -42,7 +43,10 @@ const Contato = () => {
           </div>
         </section>
         <section className="containerImg">
-          <img src={imgContato} />
+          <img
+            src={imgContato}
+            alt="Homem olhando o cenario durante sua viagem"
+          />
         </section>
       </S.Contato>
       <Footer />

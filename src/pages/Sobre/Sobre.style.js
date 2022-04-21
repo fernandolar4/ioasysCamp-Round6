@@ -91,10 +91,12 @@ export const sobreEmpresa = styled.main`
     }
 
     img {
+      display: flex;
       width: 296px;
       height: 300px;
       filter: drop-shadow(0px 2px 35px rgba(37, 42, 39, 0.1));
       border-radius: 20px;
+      margin: 0 auto;
       margin-bottom: 40px;
     }
   }

@@ -4,6 +4,7 @@ import bgD from "../../assets/pattern/backgroundDesktop.svg";
 
 export const Contato = styled.main`
   padding: 40px 32px 100px;
+  display: flex;
   @media (min-width: 992px) {
     padding: 90px 150px 250px;
     overflow-x: hidden;
