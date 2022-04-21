@@ -1,11 +1,10 @@
 # Cobé
 
 
+
 [Deploy do projeto na plataforma da Vercel.](https://ioasys-camp-round6.vercel.app)
 [Link do vídeo da Aplicação](https://youtu.be/Btv41MhfF74)
-
 [Link do projeto no figma utilizado como base para construção do layout ](https://www.figma.com/file/sBjLdJp7q4T7itZwj5Wf5Z/Round-6---Compartilhado)
-
 
 
 ## Tecnologias utilizadas 
