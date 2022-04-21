@@ -148,7 +148,7 @@ export const Comunidade = styled.div`
   p {
     width: 172px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 48px;
     color: ${({ theme }) => theme.colors.neutralDark};
     text-align: center;
@@ -182,6 +182,9 @@ export const App = styled.section`
     @media (min-width: 768px) {
       max-width: 500px;
     }
+    Button:first-child {
+      margin-right: 10px;
+    }
   }
   h2 {
     width: 178px;
@@ -201,7 +204,7 @@ export const App = styled.section`
   p {
     width: 216px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     margin-bottom: 53px;
     @media (min-width: 768px) {
@@ -288,7 +291,7 @@ export const Parceiras = styled.section`
       }
     }
     .textoParceira {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
       color: ${({ theme }) => theme.colors.neutralDark};
       @media (min-width: 768px) {

@@ -13,7 +13,7 @@ export const Resumo = styled.section`
     margin-bottom: 30px;
   }
   p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 40px;
   }

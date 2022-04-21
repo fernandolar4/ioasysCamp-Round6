@@ -33,7 +33,9 @@ export const Form = styled.div`
     :focus {
       outline: none;
       border: 2px solid ${({ theme }) => theme.colors.primaryLight};
-      ${"" /* CONFERIR A COR */}
+    }
+    :invalid:focus {
+      border: 2px solid ${({ theme }) => theme.colors.error};
     }
     &.disabled {
       background-color: ${({ theme }) => theme.colors.neutralMediumLight};

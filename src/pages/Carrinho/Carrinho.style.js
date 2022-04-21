@@ -8,6 +8,9 @@ export const Carrinho = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+
+  
   @media (min-width: 768px) {
     overflow-x: hidden;
     background-image: url(${bgD});

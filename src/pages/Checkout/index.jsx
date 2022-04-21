@@ -81,9 +81,15 @@ const Checkout = () => {
           <section className="containerPagamento">
             <h2>Pagamento</h2>
             <div className="checkoutRadio">
-              <RadioButton name="checkout">Boleto</RadioButton>
-              <RadioButton name="checkout">PIX</RadioButton>
-              <RadioButton name="checkout">Cartão de crédito</RadioButton>
+              <RadioButton name="checkout" value="Boleto">
+                Boleto
+              </RadioButton>
+              <RadioButton name="checkout" value="PIX">
+                PIX
+              </RadioButton>
+              <RadioButton name="checkout" value="Cartão de créditoIX">
+                Cartão de crédito
+              </RadioButton>
             </div>
 
             <form>
@@ -139,7 +145,11 @@ const Checkout = () => {
               <div className="containerDicas">
                 <div className="barraV" />
                 <article>
-                  <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                  <p>
+                    {" "}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce eget volutpat urna, in aliquam ipsum.{" "}
+                  </p>
                   <p>
                     <span>Alterar forma de pagamento</span>
                   </p>

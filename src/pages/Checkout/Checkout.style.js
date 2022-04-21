@@ -229,7 +229,7 @@ export const containerModal = styled.div`
       margin-bottom: 19px;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
       color: ${({ theme }) => theme.colors.neutralDark};
       span {

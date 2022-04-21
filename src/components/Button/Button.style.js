@@ -58,7 +58,8 @@ export const Button = styled.button`
     }
   }
 
-  &.disabled {
+  &.disabled,
+  &:invalid {
     background-color: ${({ theme }) => theme.colors.neutralMediumLight};
     pointer-events: none;
   }

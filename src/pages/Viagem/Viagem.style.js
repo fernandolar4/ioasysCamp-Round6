@@ -79,7 +79,7 @@ export const Info = styled.section`
 
   .descricao,
   .pessoas {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 8px;
     color: ${({ theme }) => theme.colors.neutralDark};
@@ -104,6 +104,8 @@ export const Info = styled.section`
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 24px;
+    font-size: 14px;
+
     @media (min-width: 768px) {
       font-weight: 400;
       font-size: 16px;
@@ -160,7 +162,7 @@ export const Dicas = styled.section`
       margin-bottom: 19px;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
       color: ${({ theme }) => theme.colors.neutralDark};
       @media (min-width: 768px) {
