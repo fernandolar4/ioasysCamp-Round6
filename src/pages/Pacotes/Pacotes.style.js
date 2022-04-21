@@ -74,8 +74,8 @@ export const Pacotes = styled.section`
 
         img {
           object-fit: cover;
-          height: 214px;
-          width: 75vw;
+
+          width: 80vw;
           margin-bottom: 20px;
           border-radius: 15px;
 

@@ -82,7 +82,6 @@ export const Capa = styled.section`
 
       p {
         width: auto;
-
         font-size: 24px;
         margin-left: 0px;
       }
@@ -193,6 +192,12 @@ export const App = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  img {
+    display: flex;
+    width: 50%;
+    margin-right: -10%;
+  }
   @media (min-width: 768px) {
     flex-direction: row-reverse;
     img {
