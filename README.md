@@ -1,5 +1,8 @@
 # Cobé
 
+A Cobé consiste em uma agência especializada em turismo de base comunitária transformando centros tradicionais rurais em rotas turísticas, a fim de promover o desenvolvimento local.
+
+Projeto desenvolvido como parte da segunda fase do Camp Ioasys 2022.
 
 
 [Deploy do projeto na plataforma da Vercel.](https://ioasys-camp-round6.vercel.app)
