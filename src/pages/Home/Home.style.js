@@ -258,7 +258,7 @@ export const App = styled.section`
     margin-bottom: 53px;
     @media (min-width: 768px) {
       margin-top: 120px;
-      max-width: 584.29px;
+      max-width: 400.29px;
     }
   }
 `;
